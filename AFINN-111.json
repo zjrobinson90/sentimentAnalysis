@@ -1,0 +1,614 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-d7137690e30123bade38abb082ac79f36cc7a105ff92e602405f53b725465cab.css" integrity="sha256-1xN2kOMBI7reOKuwgqx582zHoQX/kuYCQF9TtyVGXKs=" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-3802ba05bbc2b945940b138b79ae8a55487741ed14fc337567348d097321cc96.css" integrity="sha256-OAK6BbvCuUWUCxOLea6KVUh3Qe0U/DN1ZzSNCXMhzJY=" media="all" rel="stylesheet" />
+  
+  
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-cd79f063f6da2fef8de0055aa11c913cc1873486fc05ade3227e0cbcc7a168c6.css" integrity="sha256-zXnwY/baL++N4AVaoRyRPMGHNIb8Ba3jIn4MvMehaMY=" media="all" rel="stylesheet" />
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>sentiment-analyser/AFINN-111.json at master · syzer/sentiment-analyser · GitHub</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta content="https://avatars2.githubusercontent.com/u/1989646?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="syzer/sentiment-analyser" property="og:title" /><meta content="https://github.com/syzer/sentiment-analyser" property="og:url" /><meta content="sentiment-analyser - ML that can extract german and english sentiment" property="og:description" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="C9B9:237C8:6EDF7A:A0D83D:5A022DC0" data-pjax-transient>
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+  <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="C9B9:237C8:6EDF7A:A0D83D:5A022DC0" name="octolytics-dimension-request_id" /><meta content="sea" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+  <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="MWIwYzFmN2ZjOTk0NTU0NTk5YWMyY2I4NjU4N2Q0NmM4NzQwMDQ3OTUzMWQzNmU1YjEyZGQwNzMyOGYxZmRlNXx7InJlbW90ZV9hZGRyZXNzIjoiMTk5LjIwMS42NC4xMzAiLCJyZXF1ZXN0X2lkIjoiQzlCOToyMzdDODo2RURGN0E6QTBEODNEOjVBMDIyREMwIiwidGltZXN0YW1wIjoxNTEwMDkyMjMwLCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+
+
+  <meta name="html-safe-nonce" content="60b02e7ba6a010afc89bf5577c70819f1df588f0">
+
+  <meta http-equiv="x-pjax-version" content="e0825b21a7eb704e592a4c4ee9297188">
+  
+
+      <link href="https://github.com/syzer/sentiment-analyser/commits/master.atom" rel="alternate" title="Recent Commits to sentiment-analyser:master" type="application/atom+xml">
+
+  <meta name="description" content="sentiment-analyser - ML that can extract german and english sentiment">
+  <meta name="go-import" content="github.com/syzer/sentiment-analyser git https://github.com/syzer/sentiment-analyser.git">
+
+  <meta content="1989646" name="octolytics-dimension-user_id" /><meta content="syzer" name="octolytics-dimension-user_login" /><meta content="47279078" name="octolytics-dimension-repository_id" /><meta content="syzer/sentiment-analyser" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="47279078" name="octolytics-dimension-repository_network_root_id" /><meta content="syzer/sentiment-analyser" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
+
+
+    <link rel="canonical" href="https://github.com/syzer/sentiment-analyser/blob/master/AFINN-111.json" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+  </head>
+
+  <body class="logged-out env-production page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        <header class="Header header-logged-out  position-relative f4 py-3" role="banner">
+  <div class="container-lg d-flex px-3">
+    <div class="d-flex flex-justify-between flex-items-center">
+      <a class="header-logo-invertocat my-0" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--bright d-flex flex-justify-between flex-auto">
+        <nav class="mt-0">
+          <ul class="d-flex list-style-none">
+              <li class="ml-2">
+                <a href="/features" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:features" data-selected-links="/features /features/project-management /features/code-review /features/project-management /features/integrations /features">
+                  Features
+</a>              </li>
+              <li class="ml-4">
+                <a href="/business" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/security /business/customers /business">
+                  Business
+</a>              </li>
+
+              <li class="ml-4">
+                <a href="/explore" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore">
+                  Explore
+</a>              </li>
+
+              <li class="ml-4">
+                    <a href="/marketplace" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:marketplace" data-selected-links=" /marketplace">
+                      Marketplace
+</a>              </li>
+              <li class="ml-4">
+                <a href="/pricing" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:pricing" data-selected-links="/pricing /pricing/developer /pricing/team /pricing/business-hosted /pricing/business-enterprise /pricing">
+                  Pricing
+</a>              </li>
+          </ul>
+        </nav>
+
+      <div class="d-flex">
+          <div class="d-lg-flex flex-items-center mr-3">
+            <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/syzer/sentiment-analyser/search" class="js-site-search-form" data-scoped-search-url="/syzer/sentiment-analyser/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a href="/syzer/sentiment-analyser/blob/master/AFINN-111.json" class="header-search-scope no-underline">This repository</a>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+          </div>
+
+        <span class="d-inline-block">
+            <div class="HeaderNavlink px-0 py-2 m-0">
+              <a class="text-bold text-white no-underline" href="/login?return_to=%2Fsyzer%2Fsentiment-analyser%2Fblob%2Fmaster%2FAFINN-111.json" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+                <span class="text-gray">or</span>
+                <a class="text-bold text-white no-underline" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+            </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+
+
+
+
+
+    <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav ">
+      <div class="repohead-details-container clearfix container ">
+
+        <ul class="pagehead-actions">
+  <li>
+      <a href="/login?return_to=%2Fsyzer%2Fsentiment-analyser"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/syzer/sentiment-analyser/watchers"
+     aria-label="1 user is watching this repository">
+    1
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fsyzer%2Fsentiment-analyser"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/syzer/sentiment-analyser/stargazers"
+      aria-label="19 users starred this repository">
+      19
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fsyzer%2Fsentiment-analyser"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/syzer/sentiment-analyser/network" class="social-count"
+       aria-label="3 users forked this repository">
+      3
+    </a>
+  </li>
+</ul>
+
+        <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/syzer" class="url fn" rel="author">syzer</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/syzer/sentiment-analyser" data-pjax="#js-repo-pjax-container">sentiment-analyser</a></strong>
+
+</h1>
+
+      </div>
+      
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/syzer/sentiment-analyser" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /syzer/sentiment-analyser" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/syzer/sentiment-analyser/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /syzer/sentiment-analyser/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">4</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/syzer/sentiment-analyser/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /syzer/sentiment-analyser/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="/syzer/sentiment-analyser/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /syzer/sentiment-analyser/projects">
+      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+
+  <a href="/syzer/sentiment-analyser/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /syzer/sentiment-analyser/pulse">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+    </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+  <a href="/syzer/sentiment-analyser/blob/0d7937012a6714d6746063914a881f9a0d8b97b4/AFINN-111.json" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <!-- blob contrib key: blob_contributors:v21:6ace6badac2c27ddf430e8e618340fb3 -->
+
+  <div class="file-navigation js-zeroclipboard-container">
+    
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/syzer/sentiment-analyser/blob/german/AFINN-111.json"
+               data-name="german"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                german
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/syzer/sentiment-analyser/blob/greenkeeper-codecov.io-0.1.7/AFINN-111.json"
+               data-name="greenkeeper-codecov.io-0.1.7"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                greenkeeper-codecov.io-0.1.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/syzer/sentiment-analyser/blob/greenkeeper-update-all/AFINN-111.json"
+               data-name="greenkeeper-update-all"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                greenkeeper-update-all
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/syzer/sentiment-analyser/blob/master/AFINN-111.json"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/syzer/sentiment-analyser/tree/es5/AFINN-111.json"
+              data-name="es5"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="es5">
+                es5
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="BtnGroup float-right">
+      <a href="/syzer/sentiment-analyser/find/master"
+            class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+            data-pjax
+            data-hotkey="t">
+        Find file
+      </a>
+      <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+    </div>
+    <div class="breadcrumb js-zeroclipboard-target">
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/syzer/sentiment-analyser"><span>sentiment-analyser</span></a></span></span><span class="separator">/</span><strong class="final-path">AFINN-111.json</strong>
+    </div>
+  </div>
+
+
+  
+  <div class="commit-tease">
+      <span class="float-right">
+        <a class="commit-tease-sha" href="/syzer/sentiment-analyser/commit/a0896d0850166b6ff607bcaebdc38aa31bf3b62e" data-pjax>
+          a0896d0
+        </a>
+        <relative-time datetime="2015-12-02T18:48:29Z">Dec 2, 2015</relative-time>
+      </span>
+      <div>
+        <img alt="" class="avatar" data-canonical-src="https://2.gravatar.com/avatar/59a8144ed84e69f61170e16a158e0345?d=https%3A%2F%2Fassets-cdn.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=x&amp;s=140" height="20" src="https://camo.githubusercontent.com/1e4c58db6dc94ecd8130e349bebaca90b16af658/68747470733a2f2f322e67726176617461722e636f6d2f6176617461722f35396138313434656438346536396636313137306531366131353865303334353f643d68747470732533412532462532466173736574732d63646e2e6769746875622e636f6d253246696d6167657325324667726176617461727325324667726176617461722d757365722d3432302e706e6726723d7826733d313430" width="20" />
+        <span class="user-mention">Christian Ledergerber</span>
+          <a href="/syzer/sentiment-analyser/commit/a0896d0850166b6ff607bcaebdc38aa31bf3b62e" class="message" data-pjax="true" title="Adding json file">Adding json file</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>0</strong>
+         contributors
+      </button>
+      
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="file">
+    <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a href="/syzer/sentiment-analyser/raw/master/AFINN-111.json" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/syzer/sentiment-analyser/blame/master/AFINN-111.json" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/syzer/sentiment-analyser/commits/master/AFINN-111.json" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw"
+           href="https://desktop.github.com"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:windows">
+            <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+        </a>
+
+        <button type="button" class="btn-octicon disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+        </button>
+        <button type="button" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+        </button>
+  </div>
+
+  <div class="file-info">
+      2 lines (1 sloc)
+      <span class="file-info-divider"></span>
+    32.3 KB
+  </div>
+</div>
+
+    
+
+  <div itemprop="text" class="blob-wrapper data type-json">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line">{&quot;abandon&quot;:-2,&quot;abandoned&quot;:-2,&quot;abandons&quot;:-2,&quot;abducted&quot;:-2,&quot;abduction&quot;:-2,&quot;abductions&quot;:-2,&quot;abhor&quot;:-3,&quot;abhorred&quot;:-3,&quot;abhorrent&quot;:-3,&quot;abhors&quot;:-3,&quot;abilities&quot;:2,&quot;ability&quot;:2,&quot;aboard&quot;:1,&quot;absentee&quot;:-1,&quot;absentees&quot;:-1,&quot;absolve&quot;:2,&quot;absolved&quot;:2,&quot;absolves&quot;:2,&quot;absolving&quot;:2,&quot;absorbed&quot;:1,&quot;abuse&quot;:-3,&quot;abused&quot;:-3,&quot;abuses&quot;:-3,&quot;abusive&quot;:-3,&quot;accept&quot;:1,&quot;accepted&quot;:1,&quot;accepting&quot;:1,&quot;accepts&quot;:1,&quot;accident&quot;:-2,&quot;accidental&quot;:-2,&quot;accidentally&quot;:-2,&quot;accidents&quot;:-2,&quot;accomplish&quot;:2,&quot;accomplished&quot;:2,&quot;accomplishes&quot;:2,&quot;accusation&quot;:-2,&quot;accusations&quot;:-2,&quot;accuse&quot;:-2,&quot;accused&quot;:-2,&quot;accuses&quot;:-2,&quot;accusing&quot;:-2,&quot;ache&quot;:-2,&quot;achievable&quot;:1,&quot;aching&quot;:-2,&quot;acquit&quot;:2,&quot;acquits&quot;:2,&quot;acquitted&quot;:2,&quot;acquitting&quot;:2,&quot;acrimonious&quot;:-3,&quot;active&quot;:1,&quot;adequate&quot;:1,&quot;admire&quot;:3,&quot;admired&quot;:3,&quot;admires&quot;:3,&quot;admiring&quot;:3,&quot;admit&quot;:-1,&quot;admits&quot;:-1,&quot;admitted&quot;:-1,&quot;admonish&quot;:-2,&quot;admonished&quot;:-2,&quot;adopt&quot;:1,&quot;adopts&quot;:1,&quot;adorable&quot;:3,&quot;adore&quot;:3,&quot;adored&quot;:3,&quot;adores&quot;:3,&quot;advanced&quot;:1,&quot;advantage&quot;:2,&quot;advantages&quot;:2,&quot;adventure&quot;:2,&quot;adventures&quot;:2,&quot;adventurous&quot;:2,&quot;affected&quot;:-1,&quot;affection&quot;:3,&quot;affectionate&quot;:3,&quot;afflicted&quot;:-1,&quot;affronted&quot;:-1,&quot;afraid&quot;:-2,&quot;aggravate&quot;:-2,&quot;aggravated&quot;:-2,&quot;aggravates&quot;:-2,&quot;aggravating&quot;:-2,&quot;aggression&quot;:-2,&quot;aggressions&quot;:-2,&quot;aggressive&quot;:-2,&quot;aghast&quot;:-2,&quot;agog&quot;:2,&quot;agonise&quot;:-3,&quot;agonised&quot;:-3,&quot;agonises&quot;:-3,&quot;agonising&quot;:-3,&quot;agonize&quot;:-3,&quot;agonized&quot;:-3,&quot;agonizes&quot;:-3,&quot;agonizing&quot;:-3,&quot;agree&quot;:1,&quot;agreeable&quot;:2,&quot;agreed&quot;:1,&quot;agreement&quot;:1,&quot;agrees&quot;:1,&quot;alarm&quot;:-2,&quot;alarmed&quot;:-2,&quot;alarmist&quot;:-2,&quot;alarmists&quot;:-2,&quot;alas&quot;:-1,&quot;alert&quot;:-1,&quot;alienation&quot;:-2,&quot;alive&quot;:1,&quot;allergic&quot;:-2,&quot;allow&quot;:1,&quot;alone&quot;:-2,&quot;amaze&quot;:2,&quot;amazed&quot;:2,&quot;amazes&quot;:2,&quot;amazing&quot;:4,&quot;ambitious&quot;:2,&quot;ambivalent&quot;:-1,&quot;amuse&quot;:3,&quot;amused&quot;:3,&quot;amusement&quot;:3,&quot;amusements&quot;:3,&quot;anger&quot;:-3,&quot;angers&quot;:-3,&quot;angry&quot;:-3,&quot;anguish&quot;:-3,&quot;anguished&quot;:-3,&quot;animosity&quot;:-2,&quot;annoy&quot;:-2,&quot;annoyance&quot;:-2,&quot;annoyed&quot;:-2,&quot;annoying&quot;:-2,&quot;annoys&quot;:-2,&quot;antagonistic&quot;:-2,&quot;anti&quot;:-1,&quot;anticipation&quot;:1,&quot;anxiety&quot;:-2,&quot;anxious&quot;:-2,&quot;apathetic&quot;:-3,&quot;apathy&quot;:-3,&quot;apeshit&quot;:-3,&quot;apocalyptic&quot;:-2,&quot;apologise&quot;:-1,&quot;apologised&quot;:-1,&quot;apologises&quot;:-1,&quot;apologising&quot;:-1,&quot;apologize&quot;:-1,&quot;apologized&quot;:-1,&quot;apologizes&quot;:-1,&quot;apologizing&quot;:-1,&quot;apology&quot;:-1,&quot;appalled&quot;:-2,&quot;appalling&quot;:-2,&quot;appease&quot;:2,&quot;appeased&quot;:2,&quot;appeases&quot;:2,&quot;appeasing&quot;:2,&quot;applaud&quot;:2,&quot;applauded&quot;:2,&quot;applauding&quot;:2,&quot;applauds&quot;:2,&quot;applause&quot;:2,&quot;appreciate&quot;:2,&quot;appreciated&quot;:2,&quot;appreciates&quot;:2,&quot;appreciating&quot;:2,&quot;appreciation&quot;:2,&quot;apprehensive&quot;:-2,&quot;approval&quot;:2,&quot;approved&quot;:2,&quot;approves&quot;:2,&quot;ardent&quot;:1,&quot;arrest&quot;:-2,&quot;arrested&quot;:-3,&quot;arrests&quot;:-2,&quot;arrogant&quot;:-2,&quot;ashame&quot;:-2,&quot;ashamed&quot;:-2,&quot;ass&quot;:-4,&quot;assassination&quot;:-3,&quot;assassinations&quot;:-3,&quot;asset&quot;:2,&quot;assets&quot;:2,&quot;assfucking&quot;:-4,&quot;asshole&quot;:-4,&quot;astonished&quot;:2,&quot;astound&quot;:3,&quot;astounded&quot;:3,&quot;astounding&quot;:3,&quot;astoundingly&quot;:3,&quot;astounds&quot;:3,&quot;attack&quot;:-1,&quot;attacked&quot;:-1,&quot;attacking&quot;:-1,&quot;attacks&quot;:-1,&quot;attract&quot;:1,&quot;attracted&quot;:1,&quot;attracting&quot;:2,&quot;attraction&quot;:2,&quot;attractions&quot;:2,&quot;attracts&quot;:1,&quot;audacious&quot;:3,&quot;authority&quot;:1,&quot;avert&quot;:-1,&quot;averted&quot;:-1,&quot;averts&quot;:-1,&quot;avid&quot;:2,&quot;avoid&quot;:-1,&quot;avoided&quot;:-1,&quot;avoids&quot;:-1,&quot;await&quot;:-1,&quot;awaited&quot;:-1,&quot;awaits&quot;:-1,&quot;award&quot;:3,&quot;awarded&quot;:3,&quot;awards&quot;:3,&quot;awesome&quot;:4,&quot;awful&quot;:-3,&quot;awkward&quot;:-2,&quot;axe&quot;:-1,&quot;axed&quot;:-1,&quot;backed&quot;:1,&quot;backing&quot;:2,&quot;backs&quot;:1,&quot;bad&quot;:-3,&quot;badass&quot;:-3,&quot;badly&quot;:-3,&quot;bailout&quot;:-2,&quot;bamboozle&quot;:-2,&quot;bamboozled&quot;:-2,&quot;bamboozles&quot;:-2,&quot;ban&quot;:-2,&quot;banish&quot;:-1,&quot;bankrupt&quot;:-3,&quot;bankster&quot;:-3,&quot;banned&quot;:-2,&quot;bargain&quot;:2,&quot;barrier&quot;:-2,&quot;bastard&quot;:-5,&quot;bastards&quot;:-5,&quot;battle&quot;:-1,&quot;battles&quot;:-1,&quot;beaten&quot;:-2,&quot;beatific&quot;:3,&quot;beating&quot;:-1,&quot;beauties&quot;:3,&quot;beautiful&quot;:3,&quot;beautifully&quot;:3,&quot;beautify&quot;:3,&quot;belittle&quot;:-2,&quot;belittled&quot;:-2,&quot;beloved&quot;:3,&quot;benefit&quot;:2,&quot;benefits&quot;:2,&quot;benefitted&quot;:2,&quot;benefitting&quot;:2,&quot;bereave&quot;:-2,&quot;bereaved&quot;:-2,&quot;bereaves&quot;:-2,&quot;bereaving&quot;:-2,&quot;best&quot;:3,&quot;betray&quot;:-3,&quot;betrayal&quot;:-3,&quot;betrayed&quot;:-3,&quot;betraying&quot;:-3,&quot;betrays&quot;:-3,&quot;better&quot;:2,&quot;bias&quot;:-1,&quot;biased&quot;:-2,&quot;big&quot;:1,&quot;bitch&quot;:-5,&quot;bitches&quot;:-5,&quot;bitter&quot;:-2,&quot;bitterly&quot;:-2,&quot;bizarre&quot;:-2,&quot;blah&quot;:-2,&quot;blame&quot;:-2,&quot;blamed&quot;:-2,&quot;blames&quot;:-2,&quot;blaming&quot;:-2,&quot;bless&quot;:2,&quot;blesses&quot;:2,&quot;blessing&quot;:3,&quot;blind&quot;:-1,&quot;bliss&quot;:3,&quot;blissful&quot;:3,&quot;blithe&quot;:2,&quot;block&quot;:-1,&quot;blockbuster&quot;:3,&quot;blocked&quot;:-1,&quot;blocking&quot;:-1,&quot;blocks&quot;:-1,&quot;bloody&quot;:-3,&quot;blurry&quot;:-2,&quot;boastful&quot;:-2,&quot;bold&quot;:2,&quot;boldly&quot;:2,&quot;bomb&quot;:-1,&quot;boost&quot;:1,&quot;boosted&quot;:1,&quot;boosting&quot;:1,&quot;boosts&quot;:1,&quot;bore&quot;:-2,&quot;bored&quot;:-2,&quot;boring&quot;:-3,&quot;bother&quot;:-2,&quot;bothered&quot;:-2,&quot;bothers&quot;:-2,&quot;bothersome&quot;:-2,&quot;boycott&quot;:-2,&quot;boycotted&quot;:-2,&quot;boycotting&quot;:-2,&quot;boycotts&quot;:-2,&quot;brainwashing&quot;:-3,&quot;brave&quot;:2,&quot;breakthrough&quot;:3,&quot;breathtaking&quot;:5,&quot;bribe&quot;:-3,&quot;bright&quot;:1,&quot;brightest&quot;:2,&quot;brightness&quot;:1,&quot;brilliant&quot;:4,&quot;brisk&quot;:2,&quot;broke&quot;:-1,&quot;broken&quot;:-1,&quot;brooding&quot;:-2,&quot;bullied&quot;:-2,&quot;bullshit&quot;:-4,&quot;bully&quot;:-2,&quot;bullying&quot;:-2,&quot;bummer&quot;:-2,&quot;buoyant&quot;:2,&quot;burden&quot;:-2,&quot;burdened&quot;:-2,&quot;burdening&quot;:-2,&quot;burdens&quot;:-2,&quot;calm&quot;:2,&quot;calmed&quot;:2,&quot;calming&quot;:2,&quot;calms&quot;:2,&quot;can&#39;t stand&quot;:-3,&quot;cancel&quot;:-1,&quot;cancelled&quot;:-1,&quot;cancelling&quot;:-1,&quot;cancels&quot;:-1,&quot;cancer&quot;:-1,&quot;capable&quot;:1,&quot;captivated&quot;:3,&quot;care&quot;:2,&quot;carefree&quot;:1,&quot;careful&quot;:2,&quot;carefully&quot;:2,&quot;careless&quot;:-2,&quot;cares&quot;:2,&quot;cashing in&quot;:-2,&quot;casualty&quot;:-2,&quot;catastrophe&quot;:-3,&quot;catastrophic&quot;:-4,&quot;cautious&quot;:-1,&quot;celebrate&quot;:3,&quot;celebrated&quot;:3,&quot;celebrates&quot;:3,&quot;celebrating&quot;:3,&quot;censor&quot;:-2,&quot;censored&quot;:-2,&quot;censors&quot;:-2,&quot;certain&quot;:1,&quot;chagrin&quot;:-2,&quot;chagrined&quot;:-2,&quot;challenge&quot;:-1,&quot;chance&quot;:2,&quot;chances&quot;:2,&quot;chaos&quot;:-2,&quot;chaotic&quot;:-2,&quot;charged&quot;:-3,&quot;charges&quot;:-2,&quot;charm&quot;:3,&quot;charming&quot;:3,&quot;charmless&quot;:-3,&quot;chastise&quot;:-3,&quot;chastised&quot;:-3,&quot;chastises&quot;:-3,&quot;chastising&quot;:-3,&quot;cheat&quot;:-3,&quot;cheated&quot;:-3,&quot;cheater&quot;:-3,&quot;cheaters&quot;:-3,&quot;cheats&quot;:-3,&quot;cheer&quot;:2,&quot;cheered&quot;:2,&quot;cheerful&quot;:2,&quot;cheering&quot;:2,&quot;cheerless&quot;:-2,&quot;cheers&quot;:2,&quot;cheery&quot;:3,&quot;cherish&quot;:2,&quot;cherished&quot;:2,&quot;cherishes&quot;:2,&quot;cherishing&quot;:2,&quot;chic&quot;:2,&quot;childish&quot;:-2,&quot;chilling&quot;:-1,&quot;choke&quot;:-2,&quot;choked&quot;:-2,&quot;chokes&quot;:-2,&quot;choking&quot;:-2,&quot;clarifies&quot;:2,&quot;clarity&quot;:2,&quot;clash&quot;:-2,&quot;classy&quot;:3,&quot;clean&quot;:2,&quot;cleaner&quot;:2,&quot;clear&quot;:1,&quot;cleared&quot;:1,&quot;clearly&quot;:1,&quot;clears&quot;:1,&quot;clever&quot;:2,&quot;clouded&quot;:-1,&quot;clueless&quot;:-2,&quot;cock&quot;:-5,&quot;cocksucker&quot;:-5,&quot;cocksuckers&quot;:-5,&quot;cocky&quot;:-2,&quot;coerced&quot;:-2,&quot;collapse&quot;:-2,&quot;collapsed&quot;:-2,&quot;collapses&quot;:-2,&quot;collapsing&quot;:-2,&quot;collide&quot;:-1,&quot;collides&quot;:-1,&quot;colliding&quot;:-1,&quot;collision&quot;:-2,&quot;collisions&quot;:-2,&quot;colluding&quot;:-3,&quot;combat&quot;:-1,&quot;combats&quot;:-1,&quot;comedy&quot;:1,&quot;comfort&quot;:2,&quot;comfortable&quot;:2,&quot;comforting&quot;:2,&quot;comforts&quot;:2,&quot;commend&quot;:2,&quot;commended&quot;:2,&quot;commit&quot;:1,&quot;commitment&quot;:2,&quot;commits&quot;:1,&quot;committed&quot;:1,&quot;committing&quot;:1,&quot;compassionate&quot;:2,&quot;compelled&quot;:1,&quot;competent&quot;:2,&quot;competitive&quot;:2,&quot;complacent&quot;:-2,&quot;complain&quot;:-2,&quot;complained&quot;:-2,&quot;complains&quot;:-2,&quot;comprehensive&quot;:2,&quot;conciliate&quot;:2,&quot;conciliated&quot;:2,&quot;conciliates&quot;:2,&quot;conciliating&quot;:2,&quot;condemn&quot;:-2,&quot;condemnation&quot;:-2,&quot;condemned&quot;:-2,&quot;condemns&quot;:-2,&quot;confidence&quot;:2,&quot;confident&quot;:2,&quot;conflict&quot;:-2,&quot;conflicting&quot;:-2,&quot;conflictive&quot;:-2,&quot;conflicts&quot;:-2,&quot;confuse&quot;:-2,&quot;confused&quot;:-2,&quot;confusing&quot;:-2,&quot;congrats&quot;:2,&quot;congratulate&quot;:2,&quot;congratulation&quot;:2,&quot;congratulations&quot;:2,&quot;consent&quot;:2,&quot;consents&quot;:2,&quot;consolable&quot;:2,&quot;conspiracy&quot;:-3,&quot;constrained&quot;:-2,&quot;contagion&quot;:-2,&quot;contagions&quot;:-2,&quot;contagious&quot;:-1,&quot;contempt&quot;:-2,&quot;contemptuous&quot;:-2,&quot;contemptuously&quot;:-2,&quot;contend&quot;:-1,&quot;contender&quot;:-1,&quot;contending&quot;:-1,&quot;contentious&quot;:-2,&quot;contestable&quot;:-2,&quot;controversial&quot;:-2,&quot;controversially&quot;:-2,&quot;convince&quot;:1,&quot;convinced&quot;:1,&quot;convinces&quot;:1,&quot;convivial&quot;:2,&quot;cool&quot;:1,&quot;cool stuff&quot;:3,&quot;cornered&quot;:-2,&quot;corpse&quot;:-1,&quot;costly&quot;:-2,&quot;courage&quot;:2,&quot;courageous&quot;:2,&quot;courteous&quot;:2,&quot;courtesy&quot;:2,&quot;cover-up&quot;:-3,&quot;coward&quot;:-2,&quot;cowardly&quot;:-2,&quot;coziness&quot;:2,&quot;cramp&quot;:-1,&quot;crap&quot;:-3,&quot;crash&quot;:-2,&quot;crazier&quot;:-2,&quot;craziest&quot;:-2,&quot;crazy&quot;:-2,&quot;creative&quot;:2,&quot;crestfallen&quot;:-2,&quot;cried&quot;:-2,&quot;cries&quot;:-2,&quot;crime&quot;:-3,&quot;criminal&quot;:-3,&quot;criminals&quot;:-3,&quot;crisis&quot;:-3,&quot;critic&quot;:-2,&quot;criticism&quot;:-2,&quot;criticize&quot;:-2,&quot;criticized&quot;:-2,&quot;criticizes&quot;:-2,&quot;criticizing&quot;:-2,&quot;critics&quot;:-2,&quot;cruel&quot;:-3,&quot;cruelty&quot;:-3,&quot;crush&quot;:-1,&quot;crushed&quot;:-2,&quot;crushes&quot;:-1,&quot;crushing&quot;:-1,&quot;cry&quot;:-1,&quot;crying&quot;:-2,&quot;cunt&quot;:-5,&quot;curious&quot;:1,&quot;curse&quot;:-1,&quot;cut&quot;:-1,&quot;cute&quot;:2,&quot;cuts&quot;:-1,&quot;cutting&quot;:-1,&quot;cynic&quot;:-2,&quot;cynical&quot;:-2,&quot;cynicism&quot;:-2,&quot;damage&quot;:-3,&quot;damages&quot;:-3,&quot;damn&quot;:-4,&quot;damned&quot;:-4,&quot;damnit&quot;:-4,&quot;danger&quot;:-2,&quot;daredevil&quot;:2,&quot;daring&quot;:2,&quot;darkest&quot;:-2,&quot;darkness&quot;:-1,&quot;dauntless&quot;:2,&quot;dead&quot;:-3,&quot;deadlock&quot;:-2,&quot;deafening&quot;:-1,&quot;dear&quot;:2,&quot;dearly&quot;:3,&quot;death&quot;:-2,&quot;debonair&quot;:2,&quot;debt&quot;:-2,&quot;deceit&quot;:-3,&quot;deceitful&quot;:-3,&quot;deceive&quot;:-3,&quot;deceived&quot;:-3,&quot;deceives&quot;:-3,&quot;deceiving&quot;:-3,&quot;deception&quot;:-3,&quot;decisive&quot;:1,&quot;dedicated&quot;:2,&quot;defeated&quot;:-2,&quot;defect&quot;:-3,&quot;defects&quot;:-3,&quot;defender&quot;:2,&quot;defenders&quot;:2,&quot;defenseless&quot;:-2,&quot;defer&quot;:-1,&quot;deferring&quot;:-1,&quot;defiant&quot;:-1,&quot;deficit&quot;:-2,&quot;degrade&quot;:-2,&quot;degraded&quot;:-2,&quot;degrades&quot;:-2,&quot;dehumanize&quot;:-2,&quot;dehumanized&quot;:-2,&quot;dehumanizes&quot;:-2,&quot;dehumanizing&quot;:-2,&quot;deject&quot;:-2,&quot;dejected&quot;:-2,&quot;dejecting&quot;:-2,&quot;dejects&quot;:-2,&quot;delay&quot;:-1,&quot;delayed&quot;:-1,&quot;delight&quot;:3,&quot;delighted&quot;:3,&quot;delighting&quot;:3,&quot;delights&quot;:3,&quot;demand&quot;:-1,&quot;demanded&quot;:-1,&quot;demanding&quot;:-1,&quot;demands&quot;:-1,&quot;demonstration&quot;:-1,&quot;demoralized&quot;:-2,&quot;denied&quot;:-2,&quot;denier&quot;:-2,&quot;deniers&quot;:-2,&quot;denies&quot;:-2,&quot;denounce&quot;:-2,&quot;denounces&quot;:-2,&quot;deny&quot;:-2,&quot;denying&quot;:-2,&quot;depressed&quot;:-2,&quot;depressing&quot;:-2,&quot;derail&quot;:-2,&quot;derailed&quot;:-2,&quot;derails&quot;:-2,&quot;deride&quot;:-2,&quot;derided&quot;:-2,&quot;derides&quot;:-2,&quot;deriding&quot;:-2,&quot;derision&quot;:-2,&quot;desirable&quot;:2,&quot;desire&quot;:1,&quot;desired&quot;:2,&quot;desirous&quot;:2,&quot;despair&quot;:-3,&quot;despairing&quot;:-3,&quot;despairs&quot;:-3,&quot;desperate&quot;:-3,&quot;desperately&quot;:-3,&quot;despondent&quot;:-3,&quot;destroy&quot;:-3,&quot;destroyed&quot;:-3,&quot;destroying&quot;:-3,&quot;destroys&quot;:-3,&quot;destruction&quot;:-3,&quot;destructive&quot;:-3,&quot;detached&quot;:-1,&quot;detain&quot;:-2,&quot;detained&quot;:-2,&quot;detention&quot;:-2,&quot;determined&quot;:2,&quot;devastate&quot;:-2,&quot;devastated&quot;:-2,&quot;devastating&quot;:-2,&quot;devoted&quot;:3,&quot;diamond&quot;:1,&quot;dick&quot;:-4,&quot;dickhead&quot;:-4,&quot;die&quot;:-3,&quot;died&quot;:-3,&quot;difficult&quot;:-1,&quot;diffident&quot;:-2,&quot;dilemma&quot;:-1,&quot;dipshit&quot;:-3,&quot;dire&quot;:-3,&quot;direful&quot;:-3,&quot;dirt&quot;:-2,&quot;dirtier&quot;:-2,&quot;dirtiest&quot;:-2,&quot;dirty&quot;:-2,&quot;disabling&quot;:-1,&quot;disadvantage&quot;:-2,&quot;disadvantaged&quot;:-2,&quot;disappear&quot;:-1,&quot;disappeared&quot;:-1,&quot;disappears&quot;:-1,&quot;disappoint&quot;:-2,&quot;disappointed&quot;:-2,&quot;disappointing&quot;:-2,&quot;disappointment&quot;:-2,&quot;disappointments&quot;:-2,&quot;disappoints&quot;:-2,&quot;disaster&quot;:-2,&quot;disasters&quot;:-2,&quot;disastrous&quot;:-3,&quot;disbelieve&quot;:-2,&quot;discard&quot;:-1,&quot;discarded&quot;:-1,&quot;discarding&quot;:-1,&quot;discards&quot;:-1,&quot;disconsolate&quot;:-2,&quot;disconsolation&quot;:-2,&quot;discontented&quot;:-2,&quot;discord&quot;:-2,&quot;discounted&quot;:-1,&quot;discouraged&quot;:-2,&quot;discredited&quot;:-2,&quot;disdain&quot;:-2,&quot;disgrace&quot;:-2,&quot;disgraced&quot;:-2,&quot;disguise&quot;:-1,&quot;disguised&quot;:-1,&quot;disguises&quot;:-1,&quot;disguising&quot;:-1,&quot;disgust&quot;:-3,&quot;disgusted&quot;:-3,&quot;disgusting&quot;:-3,&quot;disheartened&quot;:-2,&quot;dishonest&quot;:-2,&quot;disillusioned&quot;:-2,&quot;disinclined&quot;:-2,&quot;disjointed&quot;:-2,&quot;dislike&quot;:-2,&quot;dismal&quot;:-2,&quot;dismayed&quot;:-2,&quot;disorder&quot;:-2,&quot;disorganized&quot;:-2,&quot;disoriented&quot;:-2,&quot;disparage&quot;:-2,&quot;disparaged&quot;:-2,&quot;disparages&quot;:-2,&quot;disparaging&quot;:-2,&quot;displeased&quot;:-2,&quot;dispute&quot;:-2,&quot;disputed&quot;:-2,&quot;disputes&quot;:-2,&quot;disputing&quot;:-2,&quot;disqualified&quot;:-2,&quot;disquiet&quot;:-2,&quot;disregard&quot;:-2,&quot;disregarded&quot;:-2,&quot;disregarding&quot;:-2,&quot;disregards&quot;:-2,&quot;disrespect&quot;:-2,&quot;disrespected&quot;:-2,&quot;disruption&quot;:-2,&quot;disruptions&quot;:-2,&quot;disruptive&quot;:-2,&quot;dissatisfied&quot;:-2,&quot;distort&quot;:-2,&quot;distorted&quot;:-2,&quot;distorting&quot;:-2,&quot;distorts&quot;:-2,&quot;distract&quot;:-2,&quot;distracted&quot;:-2,&quot;distraction&quot;:-2,&quot;distracts&quot;:-2,&quot;distress&quot;:-2,&quot;distressed&quot;:-2,&quot;distresses&quot;:-2,&quot;distressing&quot;:-2,&quot;distrust&quot;:-3,&quot;distrustful&quot;:-3,&quot;disturb&quot;:-2,&quot;disturbed&quot;:-2,&quot;disturbing&quot;:-2,&quot;disturbs&quot;:-2,&quot;dithering&quot;:-2,&quot;dizzy&quot;:-1,&quot;dodging&quot;:-2,&quot;dodgy&quot;:-2,&quot;does not work&quot;:-3,&quot;dolorous&quot;:-2,&quot;dont like&quot;:-2,&quot;doom&quot;:-2,&quot;doomed&quot;:-2,&quot;doubt&quot;:-1,&quot;doubted&quot;:-1,&quot;doubtful&quot;:-1,&quot;doubting&quot;:-1,&quot;doubts&quot;:-1,&quot;douche&quot;:-3,&quot;douchebag&quot;:-3,&quot;downcast&quot;:-2,&quot;downhearted&quot;:-2,&quot;downside&quot;:-2,&quot;drag&quot;:-1,&quot;dragged&quot;:-1,&quot;drags&quot;:-1,&quot;drained&quot;:-2,&quot;dread&quot;:-2,&quot;dreaded&quot;:-2,&quot;dreadful&quot;:-3,&quot;dreading&quot;:-2,&quot;dream&quot;:1,&quot;dreams&quot;:1,&quot;dreary&quot;:-2,&quot;droopy&quot;:-2,&quot;drop&quot;:-1,&quot;drown&quot;:-2,&quot;drowned&quot;:-2,&quot;drowns&quot;:-2,&quot;drunk&quot;:-2,&quot;dubious&quot;:-2,&quot;dud&quot;:-2,&quot;dull&quot;:-2,&quot;dumb&quot;:-3,&quot;dumbass&quot;:-3,&quot;dump&quot;:-1,&quot;dumped&quot;:-2,&quot;dumps&quot;:-1,&quot;dupe&quot;:-2,&quot;duped&quot;:-2,&quot;dysfunction&quot;:-2,&quot;eager&quot;:2,&quot;earnest&quot;:2,&quot;ease&quot;:2,&quot;easy&quot;:1,&quot;ecstatic&quot;:4,&quot;eerie&quot;:-2,&quot;eery&quot;:-2,&quot;effective&quot;:2,&quot;effectively&quot;:2,&quot;elated&quot;:3,&quot;elation&quot;:3,&quot;elegant&quot;:2,&quot;elegantly&quot;:2,&quot;embarrass&quot;:-2,&quot;embarrassed&quot;:-2,&quot;embarrasses&quot;:-2,&quot;embarrassing&quot;:-2,&quot;embarrassment&quot;:-2,&quot;embittered&quot;:-2,&quot;embrace&quot;:1,&quot;emergency&quot;:-2,&quot;empathetic&quot;:2,&quot;emptiness&quot;:-1,&quot;empty&quot;:-1,&quot;enchanted&quot;:2,&quot;encourage&quot;:2,&quot;encouraged&quot;:2,&quot;encouragement&quot;:2,&quot;encourages&quot;:2,&quot;endorse&quot;:2,&quot;endorsed&quot;:2,&quot;endorsement&quot;:2,&quot;endorses&quot;:2,&quot;enemies&quot;:-2,&quot;enemy&quot;:-2,&quot;energetic&quot;:2,&quot;engage&quot;:1,&quot;engages&quot;:1,&quot;engrossed&quot;:1,&quot;enjoy&quot;:2,&quot;enjoying&quot;:2,&quot;enjoys&quot;:2,&quot;enlighten&quot;:2,&quot;enlightened&quot;:2,&quot;enlightening&quot;:2,&quot;enlightens&quot;:2,&quot;ennui&quot;:-2,&quot;enrage&quot;:-2,&quot;enraged&quot;:-2,&quot;enrages&quot;:-2,&quot;enraging&quot;:-2,&quot;enrapture&quot;:3,&quot;enslave&quot;:-2,&quot;enslaved&quot;:-2,&quot;enslaves&quot;:-2,&quot;ensure&quot;:1,&quot;ensuring&quot;:1,&quot;enterprising&quot;:1,&quot;entertaining&quot;:2,&quot;enthral&quot;:3,&quot;enthusiastic&quot;:3,&quot;entitled&quot;:1,&quot;entrusted&quot;:2,&quot;envies&quot;:-1,&quot;envious&quot;:-2,&quot;envy&quot;:-1,&quot;envying&quot;:-1,&quot;erroneous&quot;:-2,&quot;error&quot;:-2,&quot;errors&quot;:-2,&quot;escape&quot;:-1,&quot;escapes&quot;:-1,&quot;escaping&quot;:-1,&quot;esteemed&quot;:2,&quot;ethical&quot;:2,&quot;euphoria&quot;:3,&quot;euphoric&quot;:4,&quot;eviction&quot;:-1,&quot;evil&quot;:-3,&quot;exaggerate&quot;:-2,&quot;exaggerated&quot;:-2,&quot;exaggerates&quot;:-2,&quot;exaggerating&quot;:-2,&quot;exasperated&quot;:2,&quot;excellence&quot;:3,&quot;excellent&quot;:3,&quot;excite&quot;:3,&quot;excited&quot;:3,&quot;excitement&quot;:3,&quot;exciting&quot;:3,&quot;exclude&quot;:-1,&quot;excluded&quot;:-2,&quot;exclusion&quot;:-1,&quot;exclusive&quot;:2,&quot;excuse&quot;:-1,&quot;exempt&quot;:-1,&quot;exhausted&quot;:-2,&quot;exhilarated&quot;:3,&quot;exhilarates&quot;:3,&quot;exhilarating&quot;:3,&quot;exonerate&quot;:2,&quot;exonerated&quot;:2,&quot;exonerates&quot;:2,&quot;exonerating&quot;:2,&quot;expand&quot;:1,&quot;expands&quot;:1,&quot;expel&quot;:-2,&quot;expelled&quot;:-2,&quot;expelling&quot;:-2,&quot;expels&quot;:-2,&quot;exploit&quot;:-2,&quot;exploited&quot;:-2,&quot;exploiting&quot;:-2,&quot;exploits&quot;:-2,&quot;exploration&quot;:1,&quot;explorations&quot;:1,&quot;expose&quot;:-1,&quot;exposed&quot;:-1,&quot;exposes&quot;:-1,&quot;exposing&quot;:-1,&quot;extend&quot;:1,&quot;extends&quot;:1,&quot;exuberant&quot;:4,&quot;exultant&quot;:3,&quot;exultantly&quot;:3,&quot;fabulous&quot;:4,&quot;fad&quot;:-2,&quot;fag&quot;:-3,&quot;faggot&quot;:-3,&quot;faggots&quot;:-3,&quot;fail&quot;:-2,&quot;failed&quot;:-2,&quot;failing&quot;:-2,&quot;fails&quot;:-2,&quot;failure&quot;:-2,&quot;failures&quot;:-2,&quot;fainthearted&quot;:-2,&quot;fair&quot;:2,&quot;faith&quot;:1,&quot;faithful&quot;:3,&quot;fake&quot;:-3,&quot;fakes&quot;:-3,&quot;faking&quot;:-3,&quot;fallen&quot;:-2,&quot;falling&quot;:-1,&quot;falsified&quot;:-3,&quot;falsify&quot;:-3,&quot;fame&quot;:1,&quot;fan&quot;:3,&quot;fantastic&quot;:4,&quot;farce&quot;:-1,&quot;fascinate&quot;:3,&quot;fascinated&quot;:3,&quot;fascinates&quot;:3,&quot;fascinating&quot;:3,&quot;fascist&quot;:-2,&quot;fascists&quot;:-2,&quot;fatalities&quot;:-3,&quot;fatality&quot;:-3,&quot;fatigue&quot;:-2,&quot;fatigued&quot;:-2,&quot;fatigues&quot;:-2,&quot;fatiguing&quot;:-2,&quot;favor&quot;:2,&quot;favored&quot;:2,&quot;favorite&quot;:2,&quot;favorited&quot;:2,&quot;favorites&quot;:2,&quot;favors&quot;:2,&quot;fear&quot;:-2,&quot;fearful&quot;:-2,&quot;fearing&quot;:-2,&quot;fearless&quot;:2,&quot;fearsome&quot;:-2,&quot;fed up&quot;:-3,&quot;feeble&quot;:-2,&quot;feeling&quot;:1,&quot;felonies&quot;:-3,&quot;felony&quot;:-3,&quot;fervent&quot;:2,&quot;fervid&quot;:2,&quot;festive&quot;:2,&quot;fiasco&quot;:-3,&quot;fidgety&quot;:-2,&quot;fight&quot;:-1,&quot;fine&quot;:2,&quot;fire&quot;:-2,&quot;fired&quot;:-2,&quot;firing&quot;:-2,&quot;fit&quot;:1,&quot;fitness&quot;:1,&quot;flagship&quot;:2,&quot;flees&quot;:-1,&quot;flop&quot;:-2,&quot;flops&quot;:-2,&quot;flu&quot;:-2,&quot;flustered&quot;:-2,&quot;focused&quot;:2,&quot;fond&quot;:2,&quot;fondness&quot;:2,&quot;fool&quot;:-2,&quot;foolish&quot;:-2,&quot;fools&quot;:-2,&quot;forced&quot;:-1,&quot;foreclosure&quot;:-2,&quot;foreclosures&quot;:-2,&quot;forget&quot;:-1,&quot;forgetful&quot;:-2,&quot;forgive&quot;:1,&quot;forgiving&quot;:1,&quot;forgotten&quot;:-1,&quot;fortunate&quot;:2,&quot;frantic&quot;:-1,&quot;fraud&quot;:-4,&quot;frauds&quot;:-4,&quot;fraudster&quot;:-4,&quot;fraudsters&quot;:-4,&quot;fraudulence&quot;:-4,&quot;fraudulent&quot;:-4,&quot;free&quot;:1,&quot;freedom&quot;:2,&quot;frenzy&quot;:-3,&quot;fresh&quot;:1,&quot;friendly&quot;:2,&quot;fright&quot;:-2,&quot;frightened&quot;:-2,&quot;frightening&quot;:-3,&quot;frikin&quot;:-2,&quot;frisky&quot;:2,&quot;frowning&quot;:-1,&quot;frustrate&quot;:-2,&quot;frustrated&quot;:-2,&quot;frustrates&quot;:-2,&quot;frustrating&quot;:-2,&quot;frustration&quot;:-2,&quot;ftw&quot;:3,&quot;fuck&quot;:-4,&quot;fucked&quot;:-4,&quot;fucker&quot;:-4,&quot;fuckers&quot;:-4,&quot;fuckface&quot;:-4,&quot;fuckhead&quot;:-4,&quot;fucking&quot;:-4,&quot;fucktard&quot;:-4,&quot;fud&quot;:-3,&quot;fuked&quot;:-4,&quot;fuking&quot;:-4,&quot;fulfill&quot;:2,&quot;fulfilled&quot;:2,&quot;fulfills&quot;:2,&quot;fuming&quot;:-2,&quot;fun&quot;:4,&quot;funeral&quot;:-1,&quot;funerals&quot;:-1,&quot;funky&quot;:2,&quot;funnier&quot;:4,&quot;funny&quot;:4,&quot;furious&quot;:-3,&quot;futile&quot;:2,&quot;gag&quot;:-2,&quot;gagged&quot;:-2,&quot;gain&quot;:2,&quot;gained&quot;:2,&quot;gaining&quot;:2,&quot;gains&quot;:2,&quot;gallant&quot;:3,&quot;gallantly&quot;:3,&quot;gallantry&quot;:3,&quot;generous&quot;:2,&quot;genial&quot;:3,&quot;ghost&quot;:-1,&quot;giddy&quot;:-2,&quot;gift&quot;:2,&quot;glad&quot;:3,&quot;glamorous&quot;:3,&quot;glamourous&quot;:3,&quot;glee&quot;:3,&quot;gleeful&quot;:3,&quot;gloom&quot;:-1,&quot;gloomy&quot;:-2,&quot;glorious&quot;:2,&quot;glory&quot;:2,&quot;glum&quot;:-2,&quot;god&quot;:1,&quot;goddamn&quot;:-3,&quot;godsend&quot;:4,&quot;good&quot;:3,&quot;goodness&quot;:3,&quot;grace&quot;:1,&quot;gracious&quot;:3,&quot;grand&quot;:3,&quot;grant&quot;:1,&quot;granted&quot;:1,&quot;granting&quot;:1,&quot;grants&quot;:1,&quot;grateful&quot;:3,&quot;gratification&quot;:2,&quot;grave&quot;:-2,&quot;gray&quot;:-1,&quot;great&quot;:3,&quot;greater&quot;:3,&quot;greatest&quot;:3,&quot;greed&quot;:-3,&quot;greedy&quot;:-2,&quot;green wash&quot;:-3,&quot;green washing&quot;:-3,&quot;greenwash&quot;:-3,&quot;greenwasher&quot;:-3,&quot;greenwashers&quot;:-3,&quot;greenwashing&quot;:-3,&quot;greet&quot;:1,&quot;greeted&quot;:1,&quot;greeting&quot;:1,&quot;greetings&quot;:2,&quot;greets&quot;:1,&quot;grey&quot;:-1,&quot;grief&quot;:-2,&quot;grieved&quot;:-2,&quot;gross&quot;:-2,&quot;growing&quot;:1,&quot;growth&quot;:2,&quot;guarantee&quot;:1,&quot;guilt&quot;:-3,&quot;guilty&quot;:-3,&quot;gullibility&quot;:-2,&quot;gullible&quot;:-2,&quot;gun&quot;:-1,&quot;ha&quot;:2,&quot;hacked&quot;:-1,&quot;haha&quot;:3,&quot;hahaha&quot;:3,&quot;hahahah&quot;:3,&quot;hail&quot;:2,&quot;hailed&quot;:2,&quot;hapless&quot;:-2,&quot;haplessness&quot;:-2,&quot;happiness&quot;:3,&quot;happy&quot;:3,&quot;hard&quot;:-1,&quot;hardier&quot;:2,&quot;hardship&quot;:-2,&quot;hardy&quot;:2,&quot;harm&quot;:-2,&quot;harmed&quot;:-2,&quot;harmful&quot;:-2,&quot;harming&quot;:-2,&quot;harms&quot;:-2,&quot;harried&quot;:-2,&quot;harsh&quot;:-2,&quot;harsher&quot;:-2,&quot;harshest&quot;:-2,&quot;hate&quot;:-3,&quot;hated&quot;:-3,&quot;haters&quot;:-3,&quot;hates&quot;:-3,&quot;hating&quot;:-3,&quot;haunt&quot;:-1,&quot;haunted&quot;:-2,&quot;haunting&quot;:1,&quot;haunts&quot;:-1,&quot;havoc&quot;:-2,&quot;healthy&quot;:2,&quot;heartbreaking&quot;:-3,&quot;heartbroken&quot;:-3,&quot;heartfelt&quot;:3,&quot;heaven&quot;:2,&quot;heavenly&quot;:4,&quot;heavyhearted&quot;:-2,&quot;hell&quot;:-4,&quot;help&quot;:2,&quot;helpful&quot;:2,&quot;helping&quot;:2,&quot;helpless&quot;:-2,&quot;helps&quot;:2,&quot;hero&quot;:2,&quot;heroes&quot;:2,&quot;heroic&quot;:3,&quot;hesitant&quot;:-2,&quot;hesitate&quot;:-2,&quot;hid&quot;:-1,&quot;hide&quot;:-1,&quot;hides&quot;:-1,&quot;hiding&quot;:-1,&quot;highlight&quot;:2,&quot;hilarious&quot;:2,&quot;hindrance&quot;:-2,&quot;hoax&quot;:-2,&quot;homesick&quot;:-2,&quot;honest&quot;:2,&quot;honor&quot;:2,&quot;honored&quot;:2,&quot;honoring&quot;:2,&quot;honour&quot;:2,&quot;honoured&quot;:2,&quot;honouring&quot;:2,&quot;hooligan&quot;:-2,&quot;hooliganism&quot;:-2,&quot;hooligans&quot;:-2,&quot;hope&quot;:2,&quot;hopeful&quot;:2,&quot;hopefully&quot;:2,&quot;hopeless&quot;:-2,&quot;hopelessness&quot;:-2,&quot;hopes&quot;:2,&quot;hoping&quot;:2,&quot;horrendous&quot;:-3,&quot;horrible&quot;:-3,&quot;horrific&quot;:-3,&quot;horrified&quot;:-3,&quot;hostile&quot;:-2,&quot;huckster&quot;:-2,&quot;hug&quot;:2,&quot;huge&quot;:1,&quot;hugs&quot;:2,&quot;humerous&quot;:3,&quot;humiliated&quot;:-3,&quot;humiliation&quot;:-3,&quot;humor&quot;:2,&quot;humorous&quot;:2,&quot;humour&quot;:2,&quot;humourous&quot;:2,&quot;hunger&quot;:-2,&quot;hurrah&quot;:5,&quot;hurt&quot;:-2,&quot;hurting&quot;:-2,&quot;hurts&quot;:-2,&quot;hypocritical&quot;:-2,&quot;hysteria&quot;:-3,&quot;hysterical&quot;:-3,&quot;hysterics&quot;:-3,&quot;idiot&quot;:-3,&quot;idiotic&quot;:-3,&quot;ignorance&quot;:-2,&quot;ignorant&quot;:-2,&quot;ignore&quot;:-1,&quot;ignored&quot;:-2,&quot;ignores&quot;:-1,&quot;ill&quot;:-2,&quot;illegal&quot;:-3,&quot;illiteracy&quot;:-2,&quot;illness&quot;:-2,&quot;illnesses&quot;:-2,&quot;imbecile&quot;:-3,&quot;immobilized&quot;:-1,&quot;immortal&quot;:2,&quot;immune&quot;:1,&quot;impatient&quot;:-2,&quot;imperfect&quot;:-2,&quot;importance&quot;:2,&quot;important&quot;:2,&quot;impose&quot;:-1,&quot;imposed&quot;:-1,&quot;imposes&quot;:-1,&quot;imposing&quot;:-1,&quot;impotent&quot;:-2,&quot;impress&quot;:3,&quot;impressed&quot;:3,&quot;impresses&quot;:3,&quot;impressive&quot;:3,&quot;imprisoned&quot;:-2,&quot;improve&quot;:2,&quot;improved&quot;:2,&quot;improvement&quot;:2,&quot;improves&quot;:2,&quot;improving&quot;:2,&quot;inability&quot;:-2,&quot;inaction&quot;:-2,&quot;inadequate&quot;:-2,&quot;incapable&quot;:-2,&quot;incapacitated&quot;:-2,&quot;incensed&quot;:-2,&quot;incompetence&quot;:-2,&quot;incompetent&quot;:-2,&quot;inconsiderate&quot;:-2,&quot;inconvenience&quot;:-2,&quot;inconvenient&quot;:-2,&quot;increase&quot;:1,&quot;increased&quot;:1,&quot;indecisive&quot;:-2,&quot;indestructible&quot;:2,&quot;indifference&quot;:-2,&quot;indifferent&quot;:-2,&quot;indignant&quot;:-2,&quot;indignation&quot;:-2,&quot;indoctrinate&quot;:-2,&quot;indoctrinated&quot;:-2,&quot;indoctrinates&quot;:-2,&quot;indoctrinating&quot;:-2,&quot;ineffective&quot;:-2,&quot;ineffectively&quot;:-2,&quot;infatuated&quot;:2,&quot;infatuation&quot;:2,&quot;infected&quot;:-2,&quot;inferior&quot;:-2,&quot;inflamed&quot;:-2,&quot;influential&quot;:2,&quot;infringement&quot;:-2,&quot;infuriate&quot;:-2,&quot;infuriated&quot;:-2,&quot;infuriates&quot;:-2,&quot;infuriating&quot;:-2,&quot;inhibit&quot;:-1,&quot;injured&quot;:-2,&quot;injury&quot;:-2,&quot;injustice&quot;:-2,&quot;innovate&quot;:1,&quot;innovates&quot;:1,&quot;innovation&quot;:1,&quot;innovative&quot;:2,&quot;inquisition&quot;:-2,&quot;inquisitive&quot;:2,&quot;insane&quot;:-2,&quot;insanity&quot;:-2,&quot;insecure&quot;:-2,&quot;insensitive&quot;:-2,&quot;insensitivity&quot;:-2,&quot;insignificant&quot;:-2,&quot;insipid&quot;:-2,&quot;inspiration&quot;:2,&quot;inspirational&quot;:2,&quot;inspire&quot;:2,&quot;inspired&quot;:2,&quot;inspires&quot;:2,&quot;inspiring&quot;:3,&quot;insult&quot;:-2,&quot;insulted&quot;:-2,&quot;insulting&quot;:-2,&quot;insults&quot;:-2,&quot;intact&quot;:2,&quot;integrity&quot;:2,&quot;intelligent&quot;:2,&quot;intense&quot;:1,&quot;interest&quot;:1,&quot;interested&quot;:2,&quot;interesting&quot;:2,&quot;interests&quot;:1,&quot;interrogated&quot;:-2,&quot;interrupt&quot;:-2,&quot;interrupted&quot;:-2,&quot;interrupting&quot;:-2,&quot;interruption&quot;:-2,&quot;interrupts&quot;:-2,&quot;intimidate&quot;:-2,&quot;intimidated&quot;:-2,&quot;intimidates&quot;:-2,&quot;intimidating&quot;:-2,&quot;intimidation&quot;:-2,&quot;intricate&quot;:2,&quot;intrigues&quot;:1,&quot;invincible&quot;:2,&quot;invite&quot;:1,&quot;inviting&quot;:1,&quot;invulnerable&quot;:2,&quot;irate&quot;:-3,&quot;ironic&quot;:-1,&quot;irony&quot;:-1,&quot;irrational&quot;:-1,&quot;irresistible&quot;:2,&quot;irresolute&quot;:-2,&quot;irresponsible&quot;:2,&quot;irreversible&quot;:-1,&quot;irritate&quot;:-3,&quot;irritated&quot;:-3,&quot;irritating&quot;:-3,&quot;isolated&quot;:-1,&quot;itchy&quot;:-2,&quot;jackass&quot;:-4,&quot;jackasses&quot;:-4,&quot;jailed&quot;:-2,&quot;jaunty&quot;:2,&quot;jealous&quot;:-2,&quot;jeopardy&quot;:-2,&quot;jerk&quot;:-3,&quot;jesus&quot;:1,&quot;jewel&quot;:1,&quot;jewels&quot;:1,&quot;jocular&quot;:2,&quot;join&quot;:1,&quot;joke&quot;:2,&quot;jokes&quot;:2,&quot;jolly&quot;:2,&quot;jovial&quot;:2,&quot;joy&quot;:3,&quot;joyful&quot;:3,&quot;joyfully&quot;:3,&quot;joyless&quot;:-2,&quot;joyous&quot;:3,&quot;jubilant&quot;:3,&quot;jumpy&quot;:-1,&quot;justice&quot;:2,&quot;justifiably&quot;:2,&quot;justified&quot;:2,&quot;keen&quot;:1,&quot;kill&quot;:-3,&quot;killed&quot;:-3,&quot;killing&quot;:-3,&quot;kills&quot;:-3,&quot;kind&quot;:2,&quot;kinder&quot;:2,&quot;kiss&quot;:2,&quot;kudos&quot;:3,&quot;lack&quot;:-2,&quot;lackadaisical&quot;:-2,&quot;lag&quot;:-1,&quot;lagged&quot;:-2,&quot;lagging&quot;:-2,&quot;lags&quot;:-2,&quot;lame&quot;:-2,&quot;landmark&quot;:2,&quot;laugh&quot;:1,&quot;laughed&quot;:1,&quot;laughing&quot;:1,&quot;laughs&quot;:1,&quot;laughting&quot;:1,&quot;launched&quot;:1,&quot;lawl&quot;:3,&quot;lawsuit&quot;:-2,&quot;lawsuits&quot;:-2,&quot;lazy&quot;:-1,&quot;leak&quot;:-1,&quot;leaked&quot;:-1,&quot;leave&quot;:-1,&quot;legal&quot;:1,&quot;legally&quot;:1,&quot;lenient&quot;:1,&quot;lethargic&quot;:-2,&quot;lethargy&quot;:-2,&quot;liar&quot;:-3,&quot;liars&quot;:-3,&quot;libelous&quot;:-2,&quot;lied&quot;:-2,&quot;lifesaver&quot;:4,&quot;lighthearted&quot;:1,&quot;like&quot;:2,&quot;liked&quot;:2,&quot;likes&quot;:2,&quot;limitation&quot;:-1,&quot;limited&quot;:-1,&quot;limits&quot;:-1,&quot;litigation&quot;:-1,&quot;litigious&quot;:-2,&quot;lively&quot;:2,&quot;livid&quot;:-2,&quot;lmao&quot;:4,&quot;lmfao&quot;:4,&quot;loathe&quot;:-3,&quot;loathed&quot;:-3,&quot;loathes&quot;:-3,&quot;loathing&quot;:-3,&quot;lobby&quot;:-2,&quot;lobbying&quot;:-2,&quot;lol&quot;:3,&quot;lonely&quot;:-2,&quot;lonesome&quot;:-2,&quot;longing&quot;:-1,&quot;loom&quot;:-1,&quot;loomed&quot;:-1,&quot;looming&quot;:-1,&quot;looms&quot;:-1,&quot;loose&quot;:-3,&quot;looses&quot;:-3,&quot;loser&quot;:-3,&quot;losing&quot;:-3,&quot;loss&quot;:-3,&quot;lost&quot;:-3,&quot;lovable&quot;:3,&quot;love&quot;:3,&quot;loved&quot;:3,&quot;lovelies&quot;:3,&quot;lovely&quot;:3,&quot;loving&quot;:2,&quot;lowest&quot;:-1,&quot;loyal&quot;:3,&quot;loyalty&quot;:3,&quot;luck&quot;:3,&quot;luckily&quot;:3,&quot;lucky&quot;:3,&quot;lugubrious&quot;:-2,&quot;lunatic&quot;:-3,&quot;lunatics&quot;:-3,&quot;lurk&quot;:-1,&quot;lurking&quot;:-1,&quot;lurks&quot;:-1,&quot;mad&quot;:-3,&quot;maddening&quot;:-3,&quot;made-up&quot;:-1,&quot;madly&quot;:-3,&quot;madness&quot;:-3,&quot;mandatory&quot;:-1,&quot;manipulated&quot;:-1,&quot;manipulating&quot;:-1,&quot;manipulation&quot;:-1,&quot;marvel&quot;:3,&quot;marvelous&quot;:3,&quot;marvels&quot;:3,&quot;masterpiece&quot;:4,&quot;masterpieces&quot;:4,&quot;matter&quot;:1,&quot;matters&quot;:1,&quot;mature&quot;:2,&quot;meaningful&quot;:2,&quot;meaningless&quot;:-2,&quot;medal&quot;:3,&quot;mediocrity&quot;:-3,&quot;meditative&quot;:1,&quot;melancholy&quot;:-2,&quot;menace&quot;:-2,&quot;menaced&quot;:-2,&quot;mercy&quot;:2,&quot;merry&quot;:3,&quot;mess&quot;:-2,&quot;messed&quot;:-2,&quot;messing up&quot;:-2,&quot;methodical&quot;:2,&quot;mindless&quot;:-2,&quot;miracle&quot;:4,&quot;mirth&quot;:3,&quot;mirthful&quot;:3,&quot;mirthfully&quot;:3,&quot;misbehave&quot;:-2,&quot;misbehaved&quot;:-2,&quot;misbehaves&quot;:-2,&quot;misbehaving&quot;:-2,&quot;mischief&quot;:-1,&quot;mischiefs&quot;:-1,&quot;miserable&quot;:-3,&quot;misery&quot;:-2,&quot;misgiving&quot;:-2,&quot;misinformation&quot;:-2,&quot;misinformed&quot;:-2,&quot;misinterpreted&quot;:-2,&quot;misleading&quot;:-3,&quot;misread&quot;:-1,&quot;misreporting&quot;:-2,&quot;misrepresentation&quot;:-2,&quot;miss&quot;:-2,&quot;missed&quot;:-2,&quot;missing&quot;:-2,&quot;mistake&quot;:-2,&quot;mistaken&quot;:-2,&quot;mistakes&quot;:-2,&quot;mistaking&quot;:-2,&quot;misunderstand&quot;:-2,&quot;misunderstanding&quot;:-2,&quot;misunderstands&quot;:-2,&quot;misunderstood&quot;:-2,&quot;moan&quot;:-2,&quot;moaned&quot;:-2,&quot;moaning&quot;:-2,&quot;moans&quot;:-2,&quot;mock&quot;:-2,&quot;mocked&quot;:-2,&quot;mocking&quot;:-2,&quot;mocks&quot;:-2,&quot;mongering&quot;:-2,&quot;monopolize&quot;:-2,&quot;monopolized&quot;:-2,&quot;monopolizes&quot;:-2,&quot;monopolizing&quot;:-2,&quot;moody&quot;:-1,&quot;mope&quot;:-1,&quot;moping&quot;:-1,&quot;moron&quot;:-3,&quot;motherfucker&quot;:-5,&quot;motherfucking&quot;:-5,&quot;motivate&quot;:1,&quot;motivated&quot;:2,&quot;motivating&quot;:2,&quot;motivation&quot;:1,&quot;mourn&quot;:-2,&quot;mourned&quot;:-2,&quot;mournful&quot;:-2,&quot;mourning&quot;:-2,&quot;mourns&quot;:-2,&quot;mumpish&quot;:-2,&quot;murder&quot;:-2,&quot;murderer&quot;:-2,&quot;murdering&quot;:-3,&quot;murderous&quot;:-3,&quot;murders&quot;:-2,&quot;myth&quot;:-1,&quot;n00b&quot;:-2,&quot;naive&quot;:-2,&quot;nasty&quot;:-3,&quot;natural&quot;:1,&quot;naïve&quot;:-2,&quot;needy&quot;:-2,&quot;negative&quot;:-2,&quot;negativity&quot;:-2,&quot;neglect&quot;:-2,&quot;neglected&quot;:-2,&quot;neglecting&quot;:-2,&quot;neglects&quot;:-2,&quot;nerves&quot;:-1,&quot;nervous&quot;:-2,&quot;nervously&quot;:-2,&quot;nice&quot;:3,&quot;nifty&quot;:2,&quot;niggas&quot;:-5,&quot;nigger&quot;:-5,&quot;no&quot;:-1,&quot;no fun&quot;:-3,&quot;noble&quot;:2,&quot;noisy&quot;:-1,&quot;nonsense&quot;:-2,&quot;noob&quot;:-2,&quot;nosey&quot;:-2,&quot;not good&quot;:-2,&quot;not working&quot;:-3,&quot;notorious&quot;:-2,&quot;novel&quot;:2,&quot;numb&quot;:-1,&quot;nuts&quot;:-3,&quot;obliterate&quot;:-2,&quot;obliterated&quot;:-2,&quot;obnoxious&quot;:-3,&quot;obscene&quot;:-2,&quot;obsessed&quot;:2,&quot;obsolete&quot;:-2,&quot;obstacle&quot;:-2,&quot;obstacles&quot;:-2,&quot;obstinate&quot;:-2,&quot;odd&quot;:-2,&quot;offend&quot;:-2,&quot;offended&quot;:-2,&quot;offender&quot;:-2,&quot;offending&quot;:-2,&quot;offends&quot;:-2,&quot;offline&quot;:-1,&quot;oks&quot;:2,&quot;ominous&quot;:3,&quot;once-in-a-lifetime&quot;:3,&quot;opportunities&quot;:2,&quot;opportunity&quot;:2,&quot;oppressed&quot;:-2,&quot;oppressive&quot;:-2,&quot;optimism&quot;:2,&quot;optimistic&quot;:2,&quot;optionless&quot;:-2,&quot;outcry&quot;:-2,&quot;outmaneuvered&quot;:-2,&quot;outrage&quot;:-3,&quot;outraged&quot;:-3,&quot;outreach&quot;:2,&quot;outstanding&quot;:5,&quot;overjoyed&quot;:4,&quot;overload&quot;:-1,&quot;overlooked&quot;:-1,&quot;overreact&quot;:-2,&quot;overreacted&quot;:-2,&quot;overreaction&quot;:-2,&quot;overreacts&quot;:-2,&quot;oversell&quot;:-2,&quot;overselling&quot;:-2,&quot;oversells&quot;:-2,&quot;oversimplification&quot;:-2,&quot;oversimplified&quot;:-2,&quot;oversimplifies&quot;:-2,&quot;oversimplify&quot;:-2,&quot;overstatement&quot;:-2,&quot;overstatements&quot;:-2,&quot;overweight&quot;:-1,&quot;oxymoron&quot;:-1,&quot;pain&quot;:-2,&quot;pained&quot;:-2,&quot;panic&quot;:-3,&quot;panicked&quot;:-3,&quot;panics&quot;:-3,&quot;paradise&quot;:3,&quot;paradox&quot;:-1,&quot;pardon&quot;:2,&quot;pardoned&quot;:2,&quot;pardoning&quot;:2,&quot;pardons&quot;:2,&quot;parley&quot;:-1,&quot;passionate&quot;:2,&quot;passive&quot;:-1,&quot;passively&quot;:-1,&quot;pathetic&quot;:-2,&quot;pay&quot;:-1,&quot;peace&quot;:2,&quot;peaceful&quot;:2,&quot;peacefully&quot;:2,&quot;penalty&quot;:-2,&quot;pensive&quot;:-1,&quot;perfect&quot;:3,&quot;perfected&quot;:2,&quot;perfectly&quot;:3,&quot;perfects&quot;:2,&quot;peril&quot;:-2,&quot;perjury&quot;:-3,&quot;perpetrator&quot;:-2,&quot;perpetrators&quot;:-2,&quot;perplexed&quot;:-2,&quot;persecute&quot;:-2,&quot;persecuted&quot;:-2,&quot;persecutes&quot;:-2,&quot;persecuting&quot;:-2,&quot;perturbed&quot;:-2,&quot;pesky&quot;:-2,&quot;pessimism&quot;:-2,&quot;pessimistic&quot;:-2,&quot;petrified&quot;:-2,&quot;phobic&quot;:-2,&quot;picturesque&quot;:2,&quot;pileup&quot;:-1,&quot;pique&quot;:-2,&quot;piqued&quot;:-2,&quot;piss&quot;:-4,&quot;pissed&quot;:-4,&quot;pissing&quot;:-3,&quot;piteous&quot;:-2,&quot;pitied&quot;:-1,&quot;pity&quot;:-2,&quot;playful&quot;:2,&quot;pleasant&quot;:3,&quot;please&quot;:1,&quot;pleased&quot;:3,&quot;pleasure&quot;:3,&quot;poised&quot;:-2,&quot;poison&quot;:-2,&quot;poisoned&quot;:-2,&quot;poisons&quot;:-2,&quot;pollute&quot;:-2,&quot;polluted&quot;:-2,&quot;polluter&quot;:-2,&quot;polluters&quot;:-2,&quot;pollutes&quot;:-2,&quot;poor&quot;:-2,&quot;poorer&quot;:-2,&quot;poorest&quot;:-2,&quot;popular&quot;:3,&quot;positive&quot;:2,&quot;positively&quot;:2,&quot;possessive&quot;:-2,&quot;postpone&quot;:-1,&quot;postponed&quot;:-1,&quot;postpones&quot;:-1,&quot;postponing&quot;:-1,&quot;poverty&quot;:-1,&quot;powerful&quot;:2,&quot;powerless&quot;:-2,&quot;praise&quot;:3,&quot;praised&quot;:3,&quot;praises&quot;:3,&quot;praising&quot;:3,&quot;pray&quot;:1,&quot;praying&quot;:1,&quot;prays&quot;:1,&quot;prblm&quot;:-2,&quot;prblms&quot;:-2,&quot;prepared&quot;:1,&quot;pressure&quot;:-1,&quot;pressured&quot;:-2,&quot;pretend&quot;:-1,&quot;pretending&quot;:-1,&quot;pretends&quot;:-1,&quot;pretty&quot;:1,&quot;prevent&quot;:-1,&quot;prevented&quot;:-1,&quot;preventing&quot;:-1,&quot;prevents&quot;:-1,&quot;prick&quot;:-5,&quot;prison&quot;:-2,&quot;prisoner&quot;:-2,&quot;prisoners&quot;:-2,&quot;privileged&quot;:2,&quot;proactive&quot;:2,&quot;problem&quot;:-2,&quot;problems&quot;:-2,&quot;profiteer&quot;:-2,&quot;progress&quot;:2,&quot;prominent&quot;:2,&quot;promise&quot;:1,&quot;promised&quot;:1,&quot;promises&quot;:1,&quot;promote&quot;:1,&quot;promoted&quot;:1,&quot;promotes&quot;:1,&quot;promoting&quot;:1,&quot;propaganda&quot;:-2,&quot;prosecute&quot;:-1,&quot;prosecuted&quot;:-2,&quot;prosecutes&quot;:-1,&quot;prosecution&quot;:-1,&quot;prospect&quot;:1,&quot;prospects&quot;:1,&quot;prosperous&quot;:3,&quot;protect&quot;:1,&quot;protected&quot;:1,&quot;protects&quot;:1,&quot;protest&quot;:-2,&quot;protesters&quot;:-2,&quot;protesting&quot;:-2,&quot;protests&quot;:-2,&quot;proud&quot;:2,&quot;proudly&quot;:2,&quot;provoke&quot;:-1,&quot;provoked&quot;:-1,&quot;provokes&quot;:-1,&quot;provoking&quot;:-1,&quot;pseudoscience&quot;:-3,&quot;punish&quot;:-2,&quot;punished&quot;:-2,&quot;punishes&quot;:-2,&quot;punitive&quot;:-2,&quot;pushy&quot;:-1,&quot;puzzled&quot;:-2,&quot;quaking&quot;:-2,&quot;questionable&quot;:-2,&quot;questioned&quot;:-1,&quot;questioning&quot;:-1,&quot;racism&quot;:-3,&quot;racist&quot;:-3,&quot;racists&quot;:-3,&quot;rage&quot;:-2,&quot;rageful&quot;:-2,&quot;rainy&quot;:-1,&quot;rant&quot;:-3,&quot;ranter&quot;:-3,&quot;ranters&quot;:-3,&quot;rants&quot;:-3,&quot;rape&quot;:-4,&quot;rapist&quot;:-4,&quot;rapture&quot;:2,&quot;raptured&quot;:2,&quot;raptures&quot;:2,&quot;rapturous&quot;:4,&quot;rash&quot;:-2,&quot;ratified&quot;:2,&quot;reach&quot;:1,&quot;reached&quot;:1,&quot;reaches&quot;:1,&quot;reaching&quot;:1,&quot;reassure&quot;:1,&quot;reassured&quot;:1,&quot;reassures&quot;:1,&quot;reassuring&quot;:2,&quot;rebellion&quot;:-2,&quot;recession&quot;:-2,&quot;reckless&quot;:-2,&quot;recommend&quot;:2,&quot;recommended&quot;:2,&quot;recommends&quot;:2,&quot;redeemed&quot;:2,&quot;refuse&quot;:-2,&quot;refused&quot;:-2,&quot;refusing&quot;:-2,&quot;regret&quot;:-2,&quot;regretful&quot;:-2,&quot;regrets&quot;:-2,&quot;regretted&quot;:-2,&quot;regretting&quot;:-2,&quot;reject&quot;:-1,&quot;rejected&quot;:-1,&quot;rejecting&quot;:-1,&quot;rejects&quot;:-1,&quot;rejoice&quot;:4,&quot;rejoiced&quot;:4,&quot;rejoices&quot;:4,&quot;rejoicing&quot;:4,&quot;relaxed&quot;:2,&quot;relentless&quot;:-1,&quot;reliant&quot;:2,&quot;relieve&quot;:1,&quot;relieved&quot;:2,&quot;relieves&quot;:1,&quot;relieving&quot;:2,&quot;relishing&quot;:2,&quot;remarkable&quot;:2,&quot;remorse&quot;:-2,&quot;repulse&quot;:-1,&quot;repulsed&quot;:-2,&quot;rescue&quot;:2,&quot;rescued&quot;:2,&quot;rescues&quot;:2,&quot;resentful&quot;:-2,&quot;resign&quot;:-1,&quot;resigned&quot;:-1,&quot;resigning&quot;:-1,&quot;resigns&quot;:-1,&quot;resolute&quot;:2,&quot;resolve&quot;:2,&quot;resolved&quot;:2,&quot;resolves&quot;:2,&quot;resolving&quot;:2,&quot;respected&quot;:2,&quot;responsible&quot;:2,&quot;responsive&quot;:2,&quot;restful&quot;:2,&quot;restless&quot;:-2,&quot;restore&quot;:1,&quot;restored&quot;:1,&quot;restores&quot;:1,&quot;restoring&quot;:1,&quot;restrict&quot;:-2,&quot;restricted&quot;:-2,&quot;restricting&quot;:-2,&quot;restriction&quot;:-2,&quot;restricts&quot;:-2,&quot;retained&quot;:-1,&quot;retard&quot;:-2,&quot;retarded&quot;:-2,&quot;retreat&quot;:-1,&quot;revenge&quot;:-2,&quot;revengeful&quot;:-2,&quot;revered&quot;:2,&quot;revive&quot;:2,&quot;revives&quot;:2,&quot;reward&quot;:2,&quot;rewarded&quot;:2,&quot;rewarding&quot;:2,&quot;rewards&quot;:2,&quot;rich&quot;:2,&quot;ridiculous&quot;:-3,&quot;rig&quot;:-1,&quot;rigged&quot;:-1,&quot;right direction&quot;:3,&quot;rigorous&quot;:3,&quot;rigorously&quot;:3,&quot;riot&quot;:-2,&quot;riots&quot;:-2,&quot;risk&quot;:-2,&quot;risks&quot;:-2,&quot;rob&quot;:-2,&quot;robber&quot;:-2,&quot;robed&quot;:-2,&quot;robing&quot;:-2,&quot;robs&quot;:-2,&quot;robust&quot;:2,&quot;rofl&quot;:4,&quot;roflcopter&quot;:4,&quot;roflmao&quot;:4,&quot;romance&quot;:2,&quot;rotfl&quot;:4,&quot;rotflmfao&quot;:4,&quot;rotflol&quot;:4,&quot;ruin&quot;:-2,&quot;ruined&quot;:-2,&quot;ruining&quot;:-2,&quot;ruins&quot;:-2,&quot;sabotage&quot;:-2,&quot;sad&quot;:-2,&quot;sadden&quot;:-2,&quot;saddened&quot;:-2,&quot;sadly&quot;:-2,&quot;safe&quot;:1,&quot;safely&quot;:1,&quot;safety&quot;:1,&quot;salient&quot;:1,&quot;sappy&quot;:-1,&quot;sarcastic&quot;:-2,&quot;satisfied&quot;:2,&quot;save&quot;:2,&quot;saved&quot;:2,&quot;scam&quot;:-2,&quot;scams&quot;:-2,&quot;scandal&quot;:-3,&quot;scandalous&quot;:-3,&quot;scandals&quot;:-3,&quot;scapegoat&quot;:-2,&quot;scapegoats&quot;:-2,&quot;scare&quot;:-2,&quot;scared&quot;:-2,&quot;scary&quot;:-2,&quot;sceptical&quot;:-2,&quot;scold&quot;:-2,&quot;scoop&quot;:3,&quot;scorn&quot;:-2,&quot;scornful&quot;:-2,&quot;scream&quot;:-2,&quot;screamed&quot;:-2,&quot;screaming&quot;:-2,&quot;screams&quot;:-2,&quot;screwed&quot;:-2,&quot;screwed up&quot;:-3,&quot;scumbag&quot;:-4,&quot;secure&quot;:2,&quot;secured&quot;:2,&quot;secures&quot;:2,&quot;sedition&quot;:-2,&quot;seditious&quot;:-2,&quot;seduced&quot;:-1,&quot;self-confident&quot;:2,&quot;self-deluded&quot;:-2,&quot;selfish&quot;:-3,&quot;selfishness&quot;:-3,&quot;sentence&quot;:-2,&quot;sentenced&quot;:-2,&quot;sentences&quot;:-2,&quot;sentencing&quot;:-2,&quot;serene&quot;:2,&quot;severe&quot;:-2,&quot;sexy&quot;:3,&quot;shaky&quot;:-2,&quot;shame&quot;:-2,&quot;shamed&quot;:-2,&quot;shameful&quot;:-2,&quot;share&quot;:1,&quot;shared&quot;:1,&quot;shares&quot;:1,&quot;shattered&quot;:-2,&quot;shit&quot;:-4,&quot;shithead&quot;:-4,&quot;shitty&quot;:-3,&quot;shock&quot;:-2,&quot;shocked&quot;:-2,&quot;shocking&quot;:-2,&quot;shocks&quot;:-2,&quot;shoot&quot;:-1,&quot;short-sighted&quot;:-2,&quot;short-sightedness&quot;:-2,&quot;shortage&quot;:-2,&quot;shortages&quot;:-2,&quot;shrew&quot;:-4,&quot;shy&quot;:-1,&quot;sick&quot;:-2,&quot;sigh&quot;:-2,&quot;significance&quot;:1,&quot;significant&quot;:1,&quot;silencing&quot;:-1,&quot;silly&quot;:-1,&quot;sincere&quot;:2,&quot;sincerely&quot;:2,&quot;sincerest&quot;:2,&quot;sincerity&quot;:2,&quot;sinful&quot;:-3,&quot;singleminded&quot;:-2,&quot;skeptic&quot;:-2,&quot;skeptical&quot;:-2,&quot;skepticism&quot;:-2,&quot;skeptics&quot;:-2,&quot;slam&quot;:-2,&quot;slash&quot;:-2,&quot;slashed&quot;:-2,&quot;slashes&quot;:-2,&quot;slashing&quot;:-2,&quot;slavery&quot;:-3,&quot;sleeplessness&quot;:-2,&quot;slick&quot;:2,&quot;slicker&quot;:2,&quot;slickest&quot;:2,&quot;sluggish&quot;:-2,&quot;slut&quot;:-5,&quot;smart&quot;:1,&quot;smarter&quot;:2,&quot;smartest&quot;:2,&quot;smear&quot;:-2,&quot;smile&quot;:2,&quot;smiled&quot;:2,&quot;smiles&quot;:2,&quot;smiling&quot;:2,&quot;smog&quot;:-2,&quot;sneaky&quot;:-1,&quot;snub&quot;:-2,&quot;snubbed&quot;:-2,&quot;snubbing&quot;:-2,&quot;snubs&quot;:-2,&quot;sobering&quot;:1,&quot;solemn&quot;:-1,&quot;solid&quot;:2,&quot;solidarity&quot;:2,&quot;solution&quot;:1,&quot;solutions&quot;:1,&quot;solve&quot;:1,&quot;solved&quot;:1,&quot;solves&quot;:1,&quot;solving&quot;:1,&quot;somber&quot;:-2,&quot;some kind&quot;:0,&quot;son-of-a-bitch&quot;:-5,&quot;soothe&quot;:3,&quot;soothed&quot;:3,&quot;soothing&quot;:3,&quot;sophisticated&quot;:2,&quot;sore&quot;:-1,&quot;sorrow&quot;:-2,&quot;sorrowful&quot;:-2,&quot;sorry&quot;:-1,&quot;spam&quot;:-2,&quot;spammer&quot;:-3,&quot;spammers&quot;:-3,&quot;spamming&quot;:-2,&quot;spark&quot;:1,&quot;sparkle&quot;:3,&quot;sparkles&quot;:3,&quot;sparkling&quot;:3,&quot;speculative&quot;:-2,&quot;spirit&quot;:1,&quot;spirited&quot;:2,&quot;spiritless&quot;:-2,&quot;spiteful&quot;:-2,&quot;splendid&quot;:3,&quot;sprightly&quot;:2,&quot;squelched&quot;:-1,&quot;stab&quot;:-2,&quot;stabbed&quot;:-2,&quot;stable&quot;:2,&quot;stabs&quot;:-2,&quot;stall&quot;:-2,&quot;stalled&quot;:-2,&quot;stalling&quot;:-2,&quot;stamina&quot;:2,&quot;stampede&quot;:-2,&quot;startled&quot;:-2,&quot;starve&quot;:-2,&quot;starved&quot;:-2,&quot;starves&quot;:-2,&quot;starving&quot;:-2,&quot;steadfast&quot;:2,&quot;steal&quot;:-2,&quot;steals&quot;:-2,&quot;stereotype&quot;:-2,&quot;stereotyped&quot;:-2,&quot;stifled&quot;:-1,&quot;stimulate&quot;:1,&quot;stimulated&quot;:1,&quot;stimulates&quot;:1,&quot;stimulating&quot;:2,&quot;stingy&quot;:-2,&quot;stolen&quot;:-2,&quot;stop&quot;:-1,&quot;stopped&quot;:-1,&quot;stopping&quot;:-1,&quot;stops&quot;:-1,&quot;stout&quot;:2,&quot;straight&quot;:1,&quot;strange&quot;:-1,&quot;strangely&quot;:-1,&quot;strangled&quot;:-2,&quot;strength&quot;:2,&quot;strengthen&quot;:2,&quot;strengthened&quot;:2,&quot;strengthening&quot;:2,&quot;strengthens&quot;:2,&quot;stressed&quot;:-2,&quot;stressor&quot;:-2,&quot;stressors&quot;:-2,&quot;stricken&quot;:-2,&quot;strike&quot;:-1,&quot;strikers&quot;:-2,&quot;strikes&quot;:-1,&quot;strong&quot;:2,&quot;stronger&quot;:2,&quot;strongest&quot;:2,&quot;struck&quot;:-1,&quot;struggle&quot;:-2,&quot;struggled&quot;:-2,&quot;struggles&quot;:-2,&quot;struggling&quot;:-2,&quot;stubborn&quot;:-2,&quot;stuck&quot;:-2,&quot;stunned&quot;:-2,&quot;stunning&quot;:4,&quot;stupid&quot;:-2,&quot;stupidly&quot;:-2,&quot;suave&quot;:2,&quot;substantial&quot;:1,&quot;substantially&quot;:1,&quot;subversive&quot;:-2,&quot;success&quot;:2,&quot;successful&quot;:3,&quot;suck&quot;:-3,&quot;sucks&quot;:-3,&quot;suffer&quot;:-2,&quot;suffering&quot;:-2,&quot;suffers&quot;:-2,&quot;suicidal&quot;:-2,&quot;suicide&quot;:-2,&quot;suing&quot;:-2,&quot;sulking&quot;:-2,&quot;sulky&quot;:-2,&quot;sullen&quot;:-2,&quot;sunshine&quot;:2,&quot;super&quot;:3,&quot;superb&quot;:5,&quot;superior&quot;:2,&quot;support&quot;:2,&quot;supported&quot;:2,&quot;supporter&quot;:1,&quot;supporters&quot;:1,&quot;supporting&quot;:1,&quot;supportive&quot;:2,&quot;supports&quot;:2,&quot;survived&quot;:2,&quot;surviving&quot;:2,&quot;survivor&quot;:2,&quot;suspect&quot;:-1,&quot;suspected&quot;:-1,&quot;suspecting&quot;:-1,&quot;suspects&quot;:-1,&quot;suspend&quot;:-1,&quot;suspended&quot;:-1,&quot;suspicious&quot;:-2,&quot;swear&quot;:-2,&quot;swearing&quot;:-2,&quot;swears&quot;:-2,&quot;sweet&quot;:2,&quot;swift&quot;:2,&quot;swiftly&quot;:2,&quot;swindle&quot;:-3,&quot;swindles&quot;:-3,&quot;swindling&quot;:-3,&quot;sympathetic&quot;:2,&quot;sympathy&quot;:2,&quot;tard&quot;:-2,&quot;tears&quot;:-2,&quot;tender&quot;:2,&quot;tense&quot;:-2,&quot;tension&quot;:-1,&quot;terrible&quot;:-3,&quot;terribly&quot;:-3,&quot;terrific&quot;:4,&quot;terrified&quot;:-3,&quot;terror&quot;:-3,&quot;terrorize&quot;:-3,&quot;terrorized&quot;:-3,&quot;terrorizes&quot;:-3,&quot;thank&quot;:2,&quot;thankful&quot;:2,&quot;thanks&quot;:2,&quot;thorny&quot;:-2,&quot;thoughtful&quot;:2,&quot;thoughtless&quot;:-2,&quot;threat&quot;:-2,&quot;threaten&quot;:-2,&quot;threatened&quot;:-2,&quot;threatening&quot;:-2,&quot;threatens&quot;:-2,&quot;threats&quot;:-2,&quot;thrilled&quot;:5,&quot;thwart&quot;:-2,&quot;thwarted&quot;:-2,&quot;thwarting&quot;:-2,&quot;thwarts&quot;:-2,&quot;timid&quot;:-2,&quot;timorous&quot;:-2,&quot;tired&quot;:-2,&quot;tits&quot;:-2,&quot;tolerant&quot;:2,&quot;toothless&quot;:-2,&quot;top&quot;:2,&quot;tops&quot;:2,&quot;torn&quot;:-2,&quot;torture&quot;:-4,&quot;tortured&quot;:-4,&quot;tortures&quot;:-4,&quot;torturing&quot;:-4,&quot;totalitarian&quot;:-2,&quot;totalitarianism&quot;:-2,&quot;tout&quot;:-2,&quot;touted&quot;:-2,&quot;touting&quot;:-2,&quot;touts&quot;:-2,&quot;tragedy&quot;:-2,&quot;tragic&quot;:-2,&quot;tranquil&quot;:2,&quot;trap&quot;:-1,&quot;trapped&quot;:-2,&quot;trauma&quot;:-3,&quot;traumatic&quot;:-3,&quot;travesty&quot;:-2,&quot;treason&quot;:-3,&quot;treasonous&quot;:-3,&quot;treasure&quot;:2,&quot;treasures&quot;:2,&quot;trembling&quot;:-2,&quot;tremulous&quot;:-2,&quot;tricked&quot;:-2,&quot;trickery&quot;:-2,&quot;triumph&quot;:4,&quot;triumphant&quot;:4,&quot;trouble&quot;:-2,&quot;troubled&quot;:-2,&quot;troubles&quot;:-2,&quot;true&quot;:2,&quot;trust&quot;:1,&quot;trusted&quot;:2,&quot;tumor&quot;:-2,&quot;twat&quot;:-5,&quot;ugly&quot;:-3,&quot;unacceptable&quot;:-2,&quot;unappreciated&quot;:-2,&quot;unapproved&quot;:-2,&quot;unaware&quot;:-2,&quot;unbelievable&quot;:-1,&quot;unbelieving&quot;:-1,&quot;unbiased&quot;:2,&quot;uncertain&quot;:-1,&quot;unclear&quot;:-1,&quot;uncomfortable&quot;:-2,&quot;unconcerned&quot;:-2,&quot;unconfirmed&quot;:-1,&quot;unconvinced&quot;:-1,&quot;uncredited&quot;:-1,&quot;undecided&quot;:-1,&quot;underestimate&quot;:-1,&quot;underestimated&quot;:-1,&quot;underestimates&quot;:-1,&quot;underestimating&quot;:-1,&quot;undermine&quot;:-2,&quot;undermined&quot;:-2,&quot;undermines&quot;:-2,&quot;undermining&quot;:-2,&quot;undeserving&quot;:-2,&quot;undesirable&quot;:-2,&quot;uneasy&quot;:-2,&quot;unemployment&quot;:-2,&quot;unequal&quot;:-1,&quot;unequaled&quot;:2,&quot;unethical&quot;:-2,&quot;unfair&quot;:-2,&quot;unfocused&quot;:-2,&quot;unfulfilled&quot;:-2,&quot;unhappy&quot;:-2,&quot;unhealthy&quot;:-2,&quot;unified&quot;:1,&quot;unimpressed&quot;:-2,&quot;unintelligent&quot;:-2,&quot;united&quot;:1,&quot;unjust&quot;:-2,&quot;unlovable&quot;:-2,&quot;unloved&quot;:-2,&quot;unmatched&quot;:1,&quot;unmotivated&quot;:-2,&quot;unprofessional&quot;:-2,&quot;unresearched&quot;:-2,&quot;unsatisfied&quot;:-2,&quot;unsecured&quot;:-2,&quot;unsettled&quot;:-1,&quot;unsophisticated&quot;:-2,&quot;unstable&quot;:-2,&quot;unstoppable&quot;:2,&quot;unsupported&quot;:-2,&quot;unsure&quot;:-1,&quot;untarnished&quot;:2,&quot;unwanted&quot;:-2,&quot;unworthy&quot;:-2,&quot;upset&quot;:-2,&quot;upsets&quot;:-2,&quot;upsetting&quot;:-2,&quot;uptight&quot;:-2,&quot;urgent&quot;:-1,&quot;useful&quot;:2,&quot;usefulness&quot;:2,&quot;useless&quot;:-2,&quot;uselessness&quot;:-2,&quot;vague&quot;:-2,&quot;validate&quot;:1,&quot;validated&quot;:1,&quot;validates&quot;:1,&quot;validating&quot;:1,&quot;verdict&quot;:-1,&quot;verdicts&quot;:-1,&quot;vested&quot;:1,&quot;vexation&quot;:-2,&quot;vexing&quot;:-2,&quot;vibrant&quot;:3,&quot;vicious&quot;:-2,&quot;victim&quot;:-3,&quot;victimize&quot;:-3,&quot;victimized&quot;:-3,&quot;victimizes&quot;:-3,&quot;victimizing&quot;:-3,&quot;victims&quot;:-3,&quot;vigilant&quot;:3,&quot;vile&quot;:-3,&quot;vindicate&quot;:2,&quot;vindicated&quot;:2,&quot;vindicates&quot;:2,&quot;vindicating&quot;:2,&quot;violate&quot;:-2,&quot;violated&quot;:-2,&quot;violates&quot;:-2,&quot;violating&quot;:-2,&quot;violence&quot;:-3,&quot;violent&quot;:-3,&quot;virtuous&quot;:2,&quot;virulent&quot;:-2,&quot;vision&quot;:1,&quot;visionary&quot;:3,&quot;visioning&quot;:1,&quot;visions&quot;:1,&quot;vitality&quot;:3,&quot;vitamin&quot;:1,&quot;vitriolic&quot;:-3,&quot;vivacious&quot;:3,&quot;vociferous&quot;:-1,&quot;vulnerability&quot;:-2,&quot;vulnerable&quot;:-2,&quot;walkout&quot;:-2,&quot;walkouts&quot;:-2,&quot;wanker&quot;:-3,&quot;want&quot;:1,&quot;war&quot;:-2,&quot;warfare&quot;:-2,&quot;warm&quot;:1,&quot;warmth&quot;:2,&quot;warn&quot;:-2,&quot;warned&quot;:-2,&quot;warning&quot;:-3,&quot;warnings&quot;:-3,&quot;warns&quot;:-2,&quot;waste&quot;:-1,&quot;wasted&quot;:-2,&quot;wasting&quot;:-2,&quot;wavering&quot;:-1,&quot;weak&quot;:-2,&quot;weakness&quot;:-2,&quot;wealth&quot;:3,&quot;wealthy&quot;:2,&quot;weary&quot;:-2,&quot;weep&quot;:-2,&quot;weeping&quot;:-2,&quot;weird&quot;:-2,&quot;welcome&quot;:2,&quot;welcomed&quot;:2,&quot;welcomes&quot;:2,&quot;whimsical&quot;:1,&quot;whitewash&quot;:-3,&quot;whore&quot;:-4,&quot;wicked&quot;:-2,&quot;widowed&quot;:-1,&quot;willingness&quot;:2,&quot;win&quot;:4,&quot;winner&quot;:4,&quot;winning&quot;:4,&quot;wins&quot;:4,&quot;winwin&quot;:3,&quot;wish&quot;:1,&quot;wishes&quot;:1,&quot;wishing&quot;:1,&quot;withdrawal&quot;:-3,&quot;woebegone&quot;:-2,&quot;woeful&quot;:-3,&quot;won&quot;:3,&quot;wonderful&quot;:4,&quot;woo&quot;:3,&quot;woohoo&quot;:3,&quot;wooo&quot;:4,&quot;woow&quot;:4,&quot;worn&quot;:-1,&quot;worried&quot;:-3,&quot;worry&quot;:-3,&quot;worrying&quot;:-3,&quot;worse&quot;:-3,&quot;worsen&quot;:-3,&quot;worsened&quot;:-3,&quot;worsening&quot;:-3,&quot;worsens&quot;:-3,&quot;worshiped&quot;:3,&quot;worst&quot;:-3,&quot;worth&quot;:2,&quot;worthless&quot;:-2,&quot;worthy&quot;:2,&quot;wow&quot;:4,&quot;wowow&quot;:4,&quot;wowww&quot;:4,&quot;wrathful&quot;:-3,&quot;wreck&quot;:-2,&quot;wrong&quot;:-2,&quot;wronged&quot;:-2,&quot;wtf&quot;:-4,&quot;yeah&quot;:1,&quot;yearning&quot;:1,&quot;yeees&quot;:2,&quot;yes&quot;:1,&quot;youthful&quot;:2,&quot;yucky&quot;:-2,&quot;yummy&quot;:3,&quot;zealot&quot;:-2,&quot;zealots&quot;:-2,&quot;zealous&quot;:2}</td>
+      </tr>
+</table>
+
+  <div class="BlobToolbar position-absolute js-file-line-actions dropdown js-menu-container js-select-menu d-none" aria-hidden="true">
+    <button class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1 dropdown-toggle js-menu-target" id="js-file-line-action-button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Inline file action toolbar" aria-controls="inline-file-actions">
+      <svg aria-hidden="true" class="octicon" height="16" version="1.1" viewBox="0 0 13 4" width="14">
+        <g stroke="none" stroke-width="1" fill-rule="evenodd">
+            <g transform="translate(-1.000000, -6.000000)">
+                <path d="M2.5,9.5 C1.67157288,9.5 1,8.82842712 1,8 C1,7.17157288 1.67157288,6.5 2.5,6.5 C3.32842712,6.5 4,7.17157288 4,8 C4,8.82842712 3.32842712,9.5 2.5,9.5 Z M7.5,9.5 C6.67157288,9.5 6,8.82842712 6,8 C6,7.17157288 6.67157288,6.5 7.5,6.5 C8.32842712,6.5 9,7.17157288 9,8 C9,8.82842712 8.32842712,9.5 7.5,9.5 Z M12.5,9.5 C11.6715729,9.5 11,8.82842712 11,8 C11,7.17157288 11.6715729,6.5 12.5,6.5 C13.3284271,6.5 14,7.17157288 14,8 C14,8.82842712 13.3284271,9.5 12.5,9.5 Z"></path>
+            </g>
+        </g>
+      </svg>
+    </button>
+    <div class="dropdown-menu-content js-menu-content" id="inline-file-actions">
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2">
+        <li><a class="js-zeroclipboard dropdown-item" style="cursor:pointer;" id="js-copy-lines" data-original-text="Copy lines">Copy lines</a></li>
+        <li><a class="js-zeroclipboard dropdown-item" id= "js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</a></li>
+        <li><a href="/syzer/sentiment-analyser/blame/0d7937012a6714d6746063914a881f9a0d8b97b4/AFINN-111.json" class="dropdown-item js-update-url-with-hash" id="js-view-git-blame">View git blame</a></li>
+          <li><a href="/syzer/sentiment-analyser/issues/new" class="dropdown-item" id="js-new-issue">Open new issue</a></li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+
+  <button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
+  <div id="jump-to-line" style="display:none">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+      <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+      <button type="submit" class="btn">Go</button>
+</form>  </div>
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2017 <span title="0.09807s from unicorn-838757207-glf73">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="footer-octicon" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha256-aYJ/d+JXxuLuXIFrxdvLB5E+We56kLV9j47KbyM1G7Y=" src="https://assets-cdn.github.com/assets/frameworks-69827f77e257c6e2ee5c816bc5dbcb07913e59ee7a90b57d8f8eca6f23351bb6.js"></script>
+    
+    <script async="async" crossorigin="anonymous" integrity="sha256-vBT19kt3U4StffbUI3j0x47gzq7TCEi8YuCn6OysNnY=" src="https://assets-cdn.github.com/assets/github-bc14f5f64b775384ad7df6d42378f4c78ee0ceaed30848bc62e0a7e8ecac3676.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+
+  </body>
+</html>
+

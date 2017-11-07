@@ -1,24 +1,34 @@
 var table;
+var txtInput;
 
 function preload() {
-	table = loadTable('AFINN-111.txt');
+	table = JSON.parse('AFINN-111.json');
+	console.log(table);
 }
 
 function setup() {
-	//noCanvas();
-	console.log(table);
-	//console.log('sentiment');
+	
 }
 
-function draw() {
+function submitText() {
+	txtInput = document.getElementById("txtBox").value;
+	var words = txtInput.split(/\W/);
+	for (var i = 0; i < words.length; i++) {
+		var oneWord = words[i].toLowerCase();
+	}
 	
+	
+	
+	console.log(oneWord);
+	console.log(words);
+	console.log(txtInput);
 }
 
 function leftPress(){
 	document.addEventListener("keyup", function(event) {
 	event.preventDefault();
 		if (event.keyCode == 37) {
-			setup();
+			submitText();
 		};
 	});
 }

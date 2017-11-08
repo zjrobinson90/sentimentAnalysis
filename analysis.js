@@ -21,7 +21,11 @@ function submitText() {
 	//Creates a scoring variable to track the total score of the words
 	var score = 0;
 	var score2 = 0;
+	//Creates an array with the score over the course of the text
+	var scoreTime = [];
+	var scoreTime2 = [];
 	//Goes through and makes a list of all the words from text box
+	var n = 0;
 	for (var i = 0; i < words.length; i++) {
 		var oneWord = words[i].toLowerCase();
 		//Check if the word exists in the AFINN word list
@@ -30,9 +34,14 @@ function submitText() {
 			score += Number(AFINN[oneWord]);
 			//Creates an array of all the words listed and their values
 			wordSpace += oneWord + ": " + AFINN[oneWord].toFixed(2) + ", ";
+			//Adds the value of score to a new array point each time a word is detected
+			scoreTime[n] = score;
+			console.log(scoreTime);
+			n++;
 		}
 	}
 	//Goes through and makes a list of all the words from text box 2
+	var m = 0;
 	for (var i = 0; i < words2.length; i++) {
 		var oneWord = words2[i].toLowerCase();
 		//Check if the word exists in the AFINN word list
@@ -41,6 +50,10 @@ function submitText() {
 			score2 += Number(other[oneWord])*5;
 			//Creates an array of all the words listed and their values
 			wordSpace2 += oneWord + ": " + (other[oneWord]*5).toFixed(2) + ", ";
+			//Adds the value of score to a new array point each time a word is detected
+			scoreTime2[m] = score2;
+			console.log(scoreTime2);
+			m++;
 		}
 	}
 	

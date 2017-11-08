@@ -2,6 +2,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sentiment Analysis Test</title>
+	<script src="afinn.json"></script>
 	<script type="text/javascript" src="analysis.js"></script>
 	
 </head>
@@ -14,10 +15,10 @@
 		
 		<textarea id="txtBox" cols=50 rows=10></textarea><br>
 		<input type="submit" name="button" id="button1" onclick="submitText()">
-		</p>
+		</p><br>
 		
-		<p id="score"></p>
-		<p id="comparitive"></p>
-		<p id="wordlist"></p>
+		<p id="score">Score: </p>
+		<p id="comparative">Comparative: </p>
+		<p id="wordlist">Word List: </p>
 </body>
 </html>

@@ -1,3 +1,12 @@
+<!--
+Interesting things to do:
+Show negative scores for interesting comparisons (bad restaurant, serial killer manifesto, bad movie, etc)
+Show positive scores for interesting comparisons (bad restaurant, serial killer manifesto, bad movie, etc)
+Show data represented in a visually interesting way 
+Compare two things of text - show their comparison in interesting ways
+Show sentiment value over a time series (over the course of the text)
+-->
+
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -9,16 +18,24 @@
 
 <body>
 	<h1>Sentiment Analysis Test</h1>
+	<p>-5 = Most Negative<br>
+		5 = Most Positive<br></p>
 	
 	<p>
 		Type here:<br>
 		
-		<textarea id="txtBox" cols=50 rows=10></textarea><br>
+		<textarea id="txtBox" cols=50 rows=10></textarea>
+		<textarea id="txtBox2" cols=50 rows=10></textarea>
+		<br>
 		<input type="submit" name="button" id="button1" onclick="submitText()">
 		</p><br>
 		
 		<p id="score">Score: </p>
 		<p id="comparative">Comparative: </p>
 		<p id="wordlist">Word List: </p>
+		
+		<p id="score2">Score2: </p>
+		<p id="comparative2">Comparative2: </p>
+		<p id="wordlist2">Word List2: </p>
 </body>
 </html>

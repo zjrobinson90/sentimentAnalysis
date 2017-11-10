@@ -22,20 +22,38 @@ Show sentiment value over a time series (over the course of the text)
 		5 = Most Positive<br></p>
 	
 	<p>
-		Type here:<br>
+		<br>
 		
-		<textarea id="txtBox" cols=50 rows=10></textarea>
-		<textarea id="txtBox2" cols=50 rows=10></textarea>
+		<textarea id="txtBox" cols=50 rows=10 placeholder="Source 1: Enter text from here..."></textarea>
+		<textarea id="txtBox2" cols=50 rows=10 placeholder="Source 2: Enter text from here..."></textarea>
 		<br>
 		<input type="submit" name="button" id="button1" onclick="submitText()">
 		</p><br>
 		
-		<p id="score">Score: </p>
-		<p id="comparative">Comparative: </p>
+		<p><b>Source 1</b></p>
+		<p id="score">Total Score: </p>
+		<p id="average">Average Score: </p>
+		<p id="totalWords">Total words: </p>
+		<p id="neutPerc">% Neutral words: </p>
+		<p id="neutCount"># Neutral words: </p>
+		<p id="posPerc">% Positive words: </p>
+		<p id="posCount"># Positive words: </p>
+		<p id="negPerc">% Negative words: </p>
+		<p id="negCount"># Negative words: </p>
+		<p id="timeSeries">Time Series: </p>
 		<p id="wordlist">Word List: </p>
-		
-		<p id="score2">Score2: </p>
-		<p id="comparative2">Comparative2: </p>
-		<p id="wordlist2">Word List2: </p>
+		<br>
+		<p><b>Source 2</b></p>
+		<p id="score2">Total Score: </p>
+		<p id="average2">Average Score: </p>
+		<p id="totalWords2">Total words: </p>
+		<p id="neutPerc2">% Neutral words: </p>
+		<p id="neutCount2"># Neutral words: </p>
+		<p id="posPerc2">% Positive words: </p>
+		<p id="posCount2"># Positive words: </p>
+		<p id="negPerc2">% Negative words: </p>
+		<p id="negCount2"># Negative words: </p>
+		<p id="timeSeries2">Time Series: </p>
+		<p id="wordlist2">Word List: </p>
 </body>
 </html>

@@ -133,8 +133,6 @@ function scoreTheWords() {
 		wordCloud[i] = uniqueAllWords[i] + ": " + c;
 	}
 	console.log(wordCloud);
-	console.log(posWords);
-	console.log(negWords);
 }
 
 function scoreTheWords2() {
@@ -188,8 +186,6 @@ function scoreTheWords2() {
 		wordCloud2[i] = uniqueAllWords2[i] + ": " + c;
 	}
 	console.log(wordCloud2);
-	console.log(posWords2);
-	console.log(negWords2);
 }
 
 function updateWebsite() {
@@ -207,17 +203,21 @@ function updateWebsite() {
 	var posPercV = "% Positive words: " + ((positiveCount.length/words.length)*100).toFixed(2) + "%";
 	document.getElementById("posPerc").innerHTML = posPercV;
 	document.getElementById("posCount").innerHTML = "# Positive words: " + positiveCount.length;
-	
 	//Displays the negative word data
 	var negPercV = "% Negative words: " + ((negativeCount.length/words.length)*100).toFixed(2) + "%";
 	document.getElementById("negPerc").innerHTML = negPercV;
 	document.getElementById("negCount").innerHTML = "# Negative words: " + negativeCount.length;
-	
+	//Displays time series data
 	document.getElementById("timeSeries").innerHTML = "Time Series: " + scoreTime;
 	
 	var wordlistV = "Word List: " + wordSpace;
+	var posWordlistV = "Positive List: " + posWords;
+	var negWordlistV = "Negative List: " + negWords;
+	var neutralWordlistV = "Neutral List: " + neutralCount;
 	document.getElementById("wordlist").innerHTML = wordlistV;
-	
+	document.getElementById("posWordlist").innerHTML = posWordlistV;
+	document.getElementById("negWordlist").innerHTML = negWordlistV;
+	document.getElementById("neutralWordlist").innerHTML = neutralWordlistV;
 	
 	//Updates the text below the second box with the data that I want to know
 	var scoreV2 = "Total Score: " + score2.toFixed(2);
@@ -237,12 +237,17 @@ function updateWebsite() {
 	var negPercV2 = "% Negative words: " + ((negativeCount2.length/words2.length)*100).toFixed(2) + "%";
 	document.getElementById("negPerc2").innerHTML = negPercV2;
 	document.getElementById("negCount2").innerHTML = "# Negative words: " + negativeCount2.length;
-	
+	//Displays time series data
 	document.getElementById("timeSeries2").innerHTML = "Time Series: " + scoreTime2;
 	
 	var wordlistV2 = "Word List: " + wordSpace2;
+	var posWordlistV2 = "Positive List: " + posWords2;
+	var negWordlistV2 = "Negative List: " + negWords2;
+	var neutralWordlistV2 = "Neutral List: " + neutralCount2;
 	document.getElementById("wordlist2").innerHTML = wordlistV2;
-	
+	document.getElementById("posWordlist2").innerHTML = posWordlistV2;
+	document.getElementById("negWordlist2").innerHTML = negWordlistV2;
+	document.getElementById("neutralWordlist2").innerHTML = neutralWordlistV2;
 }
 
 function assignFile() {

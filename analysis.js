@@ -255,58 +255,45 @@ function assignFile() {
 	console.log(table);
 }
 
+function createChart() {
+	var ctx = document.getElementById('myChart').getContext('2d');
+	var chart = new Chart(ctx, {
+		// The type of chart we want to create
+		type: 'bar',
+		// The data for our dataset
+		data: {
+			labels: ["Source 1", "Source 2"],
+			datasets: [{
+				label: "My First dataset",
+				backgroundColor: 'rgb(255, 99, 132)',
+				borderColor: 'rgb(255, 99, 132)',
+				data: [score, score2],
+				}]
+		},
+		// Configuration options go here
+		options: {
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero:true
+					}
+				}]
+			}
+		}
+	})
+}
+
 function leftPress(){
 	//Detects if a key is clicked (specifically, the left arrow)
 	document.addEventListener("keyup", function(event) {
 	event.preventDefault();
 		if (event.keyCode == 37) {
 			//Runs a function when the left key is pressed
-			assignFile();
+			//assignFile();
+			createChart();
 		};
 	});
 }
 
 //Starts the function to listen for a left arrow key press
 leftPress();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

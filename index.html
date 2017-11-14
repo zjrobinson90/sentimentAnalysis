@@ -12,6 +12,7 @@ Show sentiment value over a time series (over the course of the text)
 	<meta charset="UTF-8">
 	<title>Sentiment Analysis Test</title>
 	<script src="afinn.json"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 	<script type="text/javascript" src="analysis.js"></script>
 	
 </head>
@@ -29,6 +30,10 @@ Show sentiment value over a time series (over the course of the text)
 		<br>
 		<input type="submit" name="button" id="button1" onclick="submitText()">
 		</p><br>
+		
+		<div style= "width:40vw">
+			<canvas id="myChart"></canvas>
+		</div>
 		
 		<p><b>Source 1</b></p>
 		<p id="score">Total Score: </p>

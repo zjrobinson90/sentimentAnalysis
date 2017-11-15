@@ -257,6 +257,7 @@ function assignFile() {
 
 function createChart() {
 	var ctx = document.getElementById('myChart').getContext('2d');
+	var ctx2 = document.getElementById('myChart2').getContext('2d');
 	var chart = new Chart(ctx, {
 		// The type of chart we want to create
 		type: 'bar',
@@ -281,7 +282,45 @@ function createChart() {
 			}
 		}
 	})
+	var chart = new Chart(ctx2, {
+		// The type of chart we want to create
+		type: 'line',
+		// The data for our dataset
+		data: {
+			labels: scoreTime,
+			datasets: [{
+				fill: false,
+				label: "Source 1",
+				borderColor: 'rgb(75, 192, 192)',
+				data: scoreTime,
+				}, {
+				fill: false,
+				label: "Source 2",
+				borderColor: 'rgb(0, 0, 0)',
+				data: scoreTime2,
+				}]
+		},
+		// Configuration options go here
+		options: {
+			title: {
+				display: true,
+				text: "Sentiment over Time"
+			},
+			//showLine: false,
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero:true
+					}
+				}]
+			}
+		}
+	})
+
 }
+
+
+
 
 function leftPress(){
 	//Detects if a key is clicked (specifically, the left arrow)
@@ -297,3 +336,31 @@ function leftPress(){
 
 //Starts the function to listen for a left arrow key press
 leftPress();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -256,9 +256,11 @@ function assignFile() {
 }
 
 function createChart() {
-	var ctx = document.getElementById('myChart').getContext('2d');
+	var ctx1 = document.getElementById('myChart').getContext('2d');
 	var ctx2 = document.getElementById('myChart2').getContext('2d');
-	var chart = new Chart(ctx, {
+	var ctx3 = document.getElementById('myChart3').getContext('2d');
+	var ctx4 = document.getElementById('myChart4').getContext('2d');
+	var chart1 = new Chart(ctx1, {
 		// The type of chart we want to create
 		type: 'bar',
 		// The data for our dataset
@@ -290,24 +292,38 @@ function createChart() {
 			}
 		}
 	})
-	var chart = new Chart(ctx2, {
+	var xValue1 = [];
+	var xValue2 = [];
+	var labelForChart;
+	for(var i = 0; i < scoreTime.length; i++){
+		xValue1[i] = i;
+	}
+	for(var i = 0; i < scoreTime2.length; i++){
+		xValue2[i] = i;
+	}
+	if(xValue1 > xValue2){
+		labelForChart = xValue1;
+	} else {
+		labelForChart = xValue2;
+	}
+	var chart2 = new Chart(ctx2, {
 		// The type of chart we want to create
 		type: 'line',
 		// The data for our dataset
 		data: {
-			labels: scoreTime,
+			labels: labelForChart,
 			datasets: [{
 				fill: false,
 				label: "Source 1",
-				borderColor: 'rgb(43,46,74)',
-				backgroundColor: 'rgb(43,46,74)',
+				borderColor: 'rgb(232,69,69)',
+				backgroundColor: 'rgb(232,69,69)',
 				pointRadius: 0,
 				data: scoreTime,
 				}, {
 				fill: false,
 				label: "Source 2",
-				borderColor: 'rgb(232,69,69)',
-				backgroundColor: 'rgb(232,69,69)',
+				borderColor: 'rgb(43,46,74)',
+				backgroundColor: 'rgb(43,46,74)',
 				pointRadius: 0,
 				data: scoreTime2,
 				}]
@@ -328,7 +344,52 @@ function createChart() {
 			}
 		}
 	})
-
+	//Doughnut chart showing the percent of positive and negative words for Source 1
+	var percentPos = positiveCount.length / (positiveCount.length + negativeCount.length);
+	var percentNeg = negativeCount.length / (positiveCount.length + negativeCount.length);
+	var chart3 = new Chart(ctx3, {
+		// The type of chart we want to create
+		type: 'doughnut',
+		// The data for our dataset
+		data: {
+			labels: ["Positive", "Negative"],
+			datasets: [{
+				borderColor: ['rgb(0,173,181)', 'rgb(255,57,34)'],
+				backgroundColor: ['rgb(0,173,181)', 'rgb(255,57,34)'],
+				data: [percentPos, percentNeg],
+				}]
+		},
+		// Configuration options go here
+		options: {
+			title: {
+				display: true,
+				text: "Source 1"
+			},
+		}
+	})
+	//Doughnut chart showing the percent of positive and negative words for Source 1
+	var percentPos2 = positiveCount2.length / (positiveCount2.length + negativeCount2.length);
+	var percentNeg2 = negativeCount2.length / (positiveCount2.length + negativeCount2.length);
+	var chart4 = new Chart(ctx4, {
+		// The type of chart we want to create
+		type: 'doughnut',
+		// The data for our dataset
+		data: {
+			labels: ["Positive", "Negative"],
+			datasets: [{
+				borderColor: ['rgb(0,173,181)', 'rgb(255,57,34)'],
+				backgroundColor: ['rgb(0,173,181)', 'rgb(255,57,34)'],
+				data: [percentPos2, percentNeg2],
+				}]
+		},
+		// Configuration options go here
+		options: {
+			title: {
+				display: true,
+				text: "Source 2"
+			},
+		}
+	})
 }
 
 

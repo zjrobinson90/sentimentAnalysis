@@ -265,14 +265,22 @@ function createChart() {
 		data: {
 			labels: ["Source 1", "Source 2"],
 			datasets: [{
-				label: "My First dataset",
-				backgroundColor: 'rgb(255, 99, 132)',
-				borderColor: 'rgb(255, 99, 132)',
+				label: "Average Score",
+				backgroundColor: ['rgba(232,69,69,0.5)', 'rgba(43,46,74,0.5)'],
+				borderColor: ['rgb(232,69,69)', 'rgb(43,46,74)'],
+				borderWidth: 1,
 				data: [score, score2],
 				}]
 		},
 		// Configuration options go here
 		options: {
+			legend: {
+				display: false,
+			},
+			title: {
+				display: true,
+				text: "Average Score"
+			},
 			scales: {
 				yAxes: [{
 					ticks: {
@@ -291,12 +299,16 @@ function createChart() {
 			datasets: [{
 				fill: false,
 				label: "Source 1",
-				borderColor: 'rgb(75, 192, 192)',
+				borderColor: 'rgb(43,46,74)',
+				backgroundColor: 'rgb(43,46,74)',
+				pointRadius: 0,
 				data: scoreTime,
 				}, {
 				fill: false,
 				label: "Source 2",
-				borderColor: 'rgb(0, 0, 0)',
+				borderColor: 'rgb(232,69,69)',
+				backgroundColor: 'rgb(232,69,69)',
+				pointRadius: 0,
 				data: scoreTime2,
 				}]
 		},

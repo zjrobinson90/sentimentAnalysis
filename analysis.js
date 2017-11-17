@@ -114,7 +114,7 @@ function scoreTheWords() {
 				nn++;
 			}
 		} else {
-			neutralCount[no] = oneWord;
+			neutralCount[no] = " " + oneWord;
 			no++;
 		}
 	}
@@ -168,7 +168,7 @@ function scoreTheWords2() {
 				mn++;
 			}
 		} else {
-			neutralCount2[mo] = oneWord;
+			neutralCount2[mo] = " " + oneWord;
 			mo++;
 		}
 	}
@@ -209,7 +209,7 @@ function updateWebsite() {
 	document.getElementById("negPerc").innerHTML = negPercV;
 	document.getElementById("negCount").innerHTML = "# Negative words: " + negativeCount.length;
 	//Displays time series data
-	document.getElementById("timeSeries").innerHTML = "Time Series: " + scoreTime;
+	//document.getElementById("timeSeries").innerHTML = "Time Series: " + scoreTime;
 	
 	var wordlistV = "Word List: " + wordSpace;
 	var posWordlistV = "Positive List: " + posWords;
@@ -239,7 +239,7 @@ function updateWebsite() {
 	document.getElementById("negPerc2").innerHTML = negPercV2;
 	document.getElementById("negCount2").innerHTML = "# Negative words: " + negativeCount2.length;
 	//Displays time series data
-	document.getElementById("timeSeries2").innerHTML = "Time Series: " + scoreTime2;
+	//document.getElementById("timeSeries2").innerHTML = "Time Series: " + scoreTime2;
 	
 	var wordlistV2 = "Word List: " + wordSpace2;
 	var posWordlistV2 = "Positive List: " + posWords2;

@@ -234,9 +234,21 @@ function searchStats() {
 	var c2 = 0;
 	for (var i = 0; i < words.length; i++) {
 		var oneWord = words[i].toLowerCase();
+		var before = i - 1;
+		var after = i + 1;
 		if(oneWord == userInput){
 			userInputCount[c] = i;
 			c++;
+			//Searches for all the words before the word that is searched
+			if(after < words.length){
+				var wordAfter = words[after].toLowerCase();
+				console.log("Before: " + wordAfter);
+			}
+			//Searches for all the words after the word that is searched
+			if(after > words.length){
+				var wordBefore = words[before].toLowerCase();
+				console.log("After: " + wordBefore);
+			}
 		}
 	}
 	for (var i = 0; i < words2.length; i++) {
@@ -247,9 +259,9 @@ function searchStats() {
 			console.log(i / words2.length);
 		}
 	}
+	//Set the text for the count of instances of the searched word
 	document.getElementById("countSearch").innerHTML = "Source 1 Total: " + userInputCount.length;
 	document.getElementById("countSearch2").innerHTML = "Source 2 Total: " + userInputCount2.length;
-
 }
 
 function updateWebsite() {
@@ -367,12 +379,14 @@ function createChart() {
 	var xValue1 = [];
 	var xValue2 = [];
 	var labelForChart;
+	//Creates arrays chronologically numbered for the xAxis
 	for(var i = 0; i < scoreTime.length; i++){
 		xValue1[i] = i;
 	}
 	for(var i = 0; i < scoreTime2.length; i++){
 		xValue2[i] = i;
 	}
+	//Checks to see which Source has more instances of scored words to set the xAxis
 	if(xValue1 > xValue2){
 		labelForChart = xValue1;
 	} else {

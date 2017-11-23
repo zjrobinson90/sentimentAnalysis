@@ -1,5 +1,4 @@
 //Zack, remember to delete the "*5" that exist for any variable using the "other" database
-//This is a test to see if it made it to Github
 
 var table;
 

@@ -41,7 +41,11 @@ var wordCloud2 = [];
 //Creates an array to count the number of curse words in the text
 var curseCount = [];
 var curseCount2 = [];
-
+//Creates a variable to hold the word that users can search stats for
+var userInput = 0;
+//Creates an array to hold the count of instances the word the user is searching for appears in both sources
+var userInputCount = [];
+var userInputCount2 = [];
 
 function updateVariables() {
 	//Creates an array to store all the words from the text boxes
@@ -71,9 +75,15 @@ function updateVariables() {
 	//Creates an array to count the number of undefined words
 	neutralCount = [];
 	neutralCount2 = [];
+	//Creates an array to count unique words for the word clouds
+	wordCloud = [];
+	wordCloud2 = [];
 	//Creates an array to count the number of curse words in the text
 	curseCount = [];
 	curseCount2 = [];
+	//Creates a variable to hold the word that users can search stats for
+	userInput = 0;
+	userInputCount = [];
 }
 
 function submitText() {
@@ -87,6 +97,11 @@ function submitText() {
 	scoreTheWords();
 	scoreTheWords2();
 	updateWebsite();
+}
+
+function userWordSearch() {
+	userInput = document.getElementById("userSearch").value;
+	searchStats();
 }
 
 function scoreTheWords() {
@@ -212,6 +227,29 @@ function scoreTheWords2() {
 	console.log(wordCloud2);
 	console.log(curseCount2);
 	console.log(curseCount2.length);
+}
+
+function searchStats() {
+	var c = 0;
+	var c2 = 0;
+	for (var i = 0; i < words.length; i++) {
+		var oneWord = words[i].toLowerCase();
+		if(oneWord == userInput){
+			userInputCount[c] = i;
+			c++;
+		}
+	}
+	for (var i = 0; i < words2.length; i++) {
+		var oneWord = words2[i].toLowerCase();
+		if(oneWord == userInput){
+			userInputCount2[c2] = i;
+			c2++;
+			console.log(i / words2.length);
+		}
+	}
+	document.getElementById("countSearch").innerHTML = "Source 1 Total: " + userInputCount.length;
+	document.getElementById("countSearch2").innerHTML = "Source 2 Total: " + userInputCount2.length;
+
 }
 
 function updateWebsite() {

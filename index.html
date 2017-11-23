@@ -29,7 +29,14 @@ Search for the frequency of a user selected word (box for user input, search thr
 		<textarea id="txtBox2" cols=50 rows=10 placeholder="Source 2: Enter text from here..."></textarea>
 		<br>
 		<input type="submit" name="button" id="button1" onclick="submitText()">
-		</p><br>
+		<br>
+	</p>
+	<p>
+		<textarea id="userSearch" cols=40 rows=2 placeholder="One word to search stats for..."></textarea>
+		<input type="submit" name="button" id="button2" onclick="userWordSearch()">
+		<p id="countSearch">Source 1 Total: </p>
+		<p id="countSearch2">Source 2 Total: </p>
+	</p><br>
 		
 		<div style= "width:40vw">
 			<canvas id="myChart"></canvas>
@@ -37,10 +44,10 @@ Search for the frequency of a user selected word (box for user input, search thr
 		<div style= "width:80vw">
 			<canvas id="myChart2"></canvas>
 		</div>
-		<div style= "width:40vw">
+		<div style= "width:30vw">
 			<canvas id="myChart3"></canvas>
 		</div>
-		<div style= "width:40vw">
+		<div style= "width:30vw">
 			<canvas id="myChart4"></canvas>
 		</div>
 		

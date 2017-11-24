@@ -242,12 +242,12 @@ function searchStats() {
 			//Searches for all the words before the word that is searched
 			if(after < words.length){
 				var wordAfter = words[after].toLowerCase();
-				console.log("Before: " + wordAfter);
+				console.log("After: " + wordAfter);
 			}
 			//Searches for all the words after the word that is searched
-			if(after > words.length){
+			if(before >= 0){
 				var wordBefore = words[before].toLowerCase();
-				console.log("After: " + wordBefore);
+				console.log("Before: " + wordBefore);
 			}
 		}
 	}

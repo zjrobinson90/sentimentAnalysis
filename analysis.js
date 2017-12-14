@@ -101,6 +101,7 @@ function submitText() {
 
 function userWordSearch() {
 	userInput = document.getElementById("userSearch").value;
+	userInput = userInput.toLowerCase();
 	searchStats();
 }
 
@@ -164,8 +165,6 @@ function scoreTheWords() {
 		wordCloud[i] = uniqueAllWords[i] + ": " + c;
 	}
 	console.log(wordCloud);
-	console.log(curseCount);
-	console.log(curseCount.length);
 }
 
 function scoreTheWords2() {
@@ -225,8 +224,6 @@ function scoreTheWords2() {
 		wordCloud2[i] = uniqueAllWords2[i] + ": " + c;
 	}
 	console.log(wordCloud2);
-	console.log(curseCount2);
-	console.log(curseCount2.length);
 }
 
 function searchStats() {
@@ -268,7 +265,7 @@ function updateWebsite() {
 	//Updates the text below the first box with the data that I want to know
 	var scoreV = "Total Score: " + score.toFixed(2);
 	document.getElementById("score").innerHTML = scoreV;
-	var compV = "Average Score: " + (score / words.length).toFixed(2);
+	var compV = "Average Score: " + (score / wordSpace.length).toFixed(2); //Divides the score by the number of 'coded' words that exist (does not consider neutral words)
 	document.getElementById("average").innerHTML = compV;
 	document.getElementById("totalWords").innerHTML = "Total words: " + words.length;
 	//Displays the neutral word data
@@ -305,7 +302,7 @@ function updateWebsite() {
 	//Updates the text below the second box with the data that I want to know
 	var scoreV2 = "Total Score: " + score2.toFixed(2);
 	document.getElementById("score2").innerHTML = scoreV2;
-	var compV2 = "Average Score: " + (score2 / words2.length).toFixed(2);
+	var compV2 = "Average Score: " + (score2 / wordSpace2.length).toFixed(2); //Divides the score by the number of 'coded' words that exist (does not consider neutral words)
 	document.getElementById("average2").innerHTML = compV2;
 	document.getElementById("totalWords2").innerHTML = "Total words: " + words2.length;
 	//Displays the neutral word data
@@ -430,7 +427,7 @@ function createChart() {
 			}
 		}
 	})
-	//Doughnut chart showing the percent of positive and negative words for Source 1
+	//Donut chart showing the percent of positive and negative words for Source 1
 	var percentPos = positiveCount.length / (positiveCount.length + negativeCount.length);
 	var percentNeg = negativeCount.length / (positiveCount.length + negativeCount.length);
 	var chart3 = new Chart(ctx3, {
@@ -453,7 +450,7 @@ function createChart() {
 			},
 		}
 	})
-	//Doughnut chart showing the percent of positive and negative words for Source 1
+	//Donut chart showing the percent of positive and negative words for Source 1
 	var percentPos2 = positiveCount2.length / (positiveCount2.length + negativeCount2.length);
 	var percentNeg2 = negativeCount2.length / (positiveCount2.length + negativeCount2.length);
 	var chart4 = new Chart(ctx4, {

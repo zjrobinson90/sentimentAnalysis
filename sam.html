@@ -10,25 +10,23 @@ Search for the frequency of a user selected word (box for user input, search thr
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Sentiment Analysis Test</title>
+	<title>Fun Analysis</title>
 	<script src="afinn.json"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-	<script type="text/javascript" src="analysis.js"></script>
+	<script type="text/javascript" src="analysis1.js"></script>
 	
 </head>
 
 <body>
-	<h1>Sentiment Analysis Test</h1>
-	<a href='sam.html'><p>For Sam</p></a>
+	<h1>Fun Analysis</h1>
 	<p>Press the Left keyboard key to show charts<br>
-	<p>-5 = Most Negative<br>
-		5 = Most Positive<br></p>
+	<p>-5 = Less Fun<br>
+		5 = More Fun<br></p>
 	
 	<p>
 		<br>
 		
-		<textarea id="txtBox" cols=50 rows=10 placeholder="Source 1: Enter text from here..."></textarea>
-		<textarea id="txtBox2" cols=50 rows=10 placeholder="Source 2: Enter text from here..."></textarea>
+		<textarea id="txtBox" cols=50 rows=10 placeholder="Source: Enter text here..."></textarea>
 		<br>
 		<input type="submit" name="button" id="button1" onclick="submitText()">
 		<br>
@@ -37,7 +35,6 @@ Search for the frequency of a user selected word (box for user input, search thr
 		<textarea id="userSearch" cols=40 rows=2 placeholder="One word to search stats for..."></textarea>
 		<input type="submit" name="button" id="button2" onclick="userWordSearch()">
 		<p id="countSearch">Source 1 Total: </p>
-		<p id="countSearch2">Source 2 Total: </p>
 	</p><br>
 		
 		<div style= "width:40vw">
@@ -72,25 +69,5 @@ Search for the frequency of a user selected word (box for user input, search thr
 		<p id="curseWordlist">Curse List: </p>
 		<p id="neutralWordlist">Neutral List: </p>
 
-		
-		<br>
-		<p><b>Source 2</b></p>
-		<p id="score2">Total Score: </p>
-		<p id="average2">Average Score: </p>
-		<p id="totalWords2">Total words: </p>
-		<p id="neutPerc2">% Neutral words: </p>
-		<p id="neutCount2"># Neutral words: </p>
-		<p id="posPerc2">% Positive words: </p>
-		<p id="posCount2"># Positive words: </p>
-		<p id="negPerc2">% Negative words: </p>
-		<p id="negCount2"># Negative words: </p>
-		<p id="cursePerc2">% Curse words: </p>
-		<p id="curseCount2"># Curse words: </p>
-		<!--<p id="timeSeries2">Time Series: </p>-->
-		<p id="wordlist2">Word List: </p>
-		<p id="posWordlist2">Positive List: </p>
-		<p id="negWordlist2">Negative List: </p>
-		<p id="curseWordlist2">Curse List: </p>
-		<p id="neutralWordlist2">Neutral List: </p>
 </body>
 </html>
